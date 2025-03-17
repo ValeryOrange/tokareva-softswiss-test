@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    padding: 0 $padding-s;
+    background: $black;
+
+    &__logo {
+        height: 24px;
+    }
+}
+
+@include respond(md) {
+    .header {
+        height: 80px;
+        padding: 0 $padding-l;
+    }
+}
+
+@include respond(lg) {
+    .header {
+        padding: 0 $padding-xxl;
+
+        &__logo {
+            height: 35px;
+        }
+    }
+}

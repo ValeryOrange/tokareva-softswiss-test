@@ -1,0 +1,15 @@
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: $padding-s 0;
+    background: $black;
+    height: 127px;
+
+    &__img {
+        width: 70px;
+        height: auto;
+    }
+}

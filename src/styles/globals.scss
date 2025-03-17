@@ -1,0 +1,14 @@
+.emph-text-l {
+    font-size: $font-size-l;
+    font-weight: $font-weight-super;
+    color: $yellow;
+}
+
+a.emph-text-l,
+a:visited.emph-text-l {
+    color: $yellow;
+}
+
+a:hover.emph-text-l {
+    color: $yellow-transparent;
+}
