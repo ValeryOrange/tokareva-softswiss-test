@@ -1,7 +1,14 @@
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Routing from './routes';
 import './App.scss';
 
 function App() {
-    return <div>Go App</div>;
+    return (
+        <BrowserRouter>
+            <Routing />
+        </BrowserRouter>
+    );
 }
 
 export default App;
