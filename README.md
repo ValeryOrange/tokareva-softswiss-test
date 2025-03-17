@@ -7,17 +7,18 @@ node@20.12.2
 
 ## Available Scripts
 
-In the project directory, you can run:
+### `npm i`
 
-### `npm start`
+Installs dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `npm run start`
 
-### `npm run build`
+Runs the Go App locally
 
-Builds the app for production to the `build` folder.
+### `npm run build` or `npm run predeploy`
+
+Creates production build
 
 ### `npm run deploy`
 
-Deploys this application to GitHub Pages and available with [http://ValeryOrange.github.io/tokareva-softswiss-test]http://ValeryOrange.github.io/tokareva-softswiss-test
+Deploys this application to GitHub Pages and available on [http://ValeryOrange.github.io/tokareva-softswiss-test](http://ValeryOrange.github.io/tokareva-softswiss-test)
