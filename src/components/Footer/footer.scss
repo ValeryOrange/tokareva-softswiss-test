@@ -12,4 +12,9 @@
         width: 70px;
         height: auto;
     }
+
+    &__link {
+        font-size: $font-size-md;
+        font-weight: $font-weight-super;
+    }
 }

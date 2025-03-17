@@ -21,4 +21,4 @@ Creates production build
 
 ### `npm run deploy`
 
-Deploys this application to GitHub Pages and available on [http://ValeryOrange.github.io/tokareva-softswiss-test](http://ValeryOrange.github.io/tokareva-softswiss-test)
+Deploys this application to GitHub Pages and available on [https://valeryorange.github.io/tokareva-softswiss-test/#/](http://ValeryOrange.github.io/tokareva-softswiss-test)

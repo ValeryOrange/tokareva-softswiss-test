@@ -13,8 +13,8 @@ const Footer = () => {
                 width="130"
                 height="148"
             />
-            <NavLink className="emph-text-l" to="/about">
-                Exciting space adventure!
+            <NavLink className="footer__link" to="/about">
+                <em className="yellow">Exciting space adventure!</em>
             </NavLink>
         </div>
     );

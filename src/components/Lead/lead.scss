@@ -1,0 +1,51 @@
+.lead {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: $gap-s;
+    padding: 0 $padding-l $padding-md;
+    height: 420px;
+
+    &__title {
+        font-size: $font-size-xl;
+        font-weight: $font-weight-super;
+    }
+
+    &__subtitle {
+        font-size: $font-size-m;
+        font-weight: $font-weight-super;
+    }
+}
+
+@include respond(md) {
+    .lead {
+        align-items: start;
+        justify-content: center;
+        gap: $gap-m;
+        padding: 0 $padding-md;
+        height: 450px;
+
+        &__title {
+            font-size: $font-size-grand;
+        }
+
+        &__subtitle {
+            font-size: $font-size-l;
+        }
+    }
+}
+
+@include respond(lg) {
+    .lead {
+        padding: 0 $padding-xl;
+        height: 490px;
+
+        &__title {
+            font-size: $font-size-super;
+        }
+
+        &__subtitle {
+            font-size: $font-size-l;
+        }
+    }
+}

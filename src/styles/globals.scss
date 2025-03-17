@@ -1,14 +1,17 @@
-.emph-text-l {
-    font-size: $font-size-l;
-    font-weight: $font-weight-super;
+// typography
+em.yellow {
     color: $yellow;
 }
 
-a.emph-text-l,
-a:visited.emph-text-l {
+em.pink {
+    color: $pink;
+}
+
+a em.yellow,
+a:visited em {
     color: $yellow;
 }
 
-a:hover.emph-text-l {
+a:hover em.yellow {
     color: $yellow-transparent;
 }
