@@ -13,14 +13,14 @@
         "react-scripts": "5.0.1"
     },
     "scripts": {
-        "start": "concurrently \"npm run lint:watch\" \"npm run prettier:watch\" \"react-scripts start\"",
-        "build": "react-scripts build",
-        "eject": "react-scripts eject",
+        "start": "concurrently \"npm run lint:watch\" \"npm run prettier:watch\" \"craco start\"",
+        "build": "craco build",
+        "eject": "craco eject",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build",
-        "lint": "eslint 'src/**/*.{js,jsx}'",
-        "lint:watch": "eslint 'src/**/*.{js,jsx}' --watch",
-        "lint:fix": "eslint 'src/**/*.{js,jsx}' --fix",
+        "lint": "eslint 'src/**/*.{js,jsx,scss,css}'",
+        "lint:watch": "eslint 'src/**/*.{js,jsx,scss,css}' --watch",
+        "lint:fix": "eslint 'src/**/*.{js,jsx,scss,css}' --fix",
         "prettier:watch": "onchange 'src/**/*.{js,jsx,json,sass,scss,css,md}' -- prettier --write --ignore-unknown {{changed}}"
     },
     "eslintConfig": {
@@ -42,6 +42,7 @@
         ]
     },
     "devDependencies": {
+        "@craco/craco": "^7.1.0",
         "@eslint/js": "^9.22.0",
         "babel-eslint": "^10.1.0",
         "concurrently": "^9.1.2",
