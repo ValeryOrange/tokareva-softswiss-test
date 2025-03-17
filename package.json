@@ -14,12 +14,16 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm run lint:watch\" \"npm run prettier:watch\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "lint": "eslint 'src/**/*.{js,jsx}'",
+    "lint:watch": "eslint 'src/**/*.{js,jsx}' --watch",
+    "lint:fix": "eslint 'src/**/*.{js,jsx}' --fix",
+    "prettier:watch": "onchange 'src/**/*.{js,jsx,json,scss,css,md}' -- prettier --write --ignore-unknown {{changed}}"
   },
   "eslintConfig": {
     "extends": [
@@ -40,7 +44,18 @@
     ]
   },
   "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "babel-eslint": "^10.1.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "gh-pages": "^6.3.0",
+    "globals": "^16.0.0",
+    "onchange": "^7.1.0",
+    "prettier": "^3.5.3",
     "sass": "^1.85.1"
   }
 }
