@@ -4,8 +4,8 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 0 5rem 3.4rem;
-    margin: -1rem -2rem 0;
+    padding: 0 3.4rem 5rem;
+    margin: -2rem -2rem 0;
     height: 420px;
     font-size: 1.6rem;
     background: linear-gradient($black-transparent, $grey-transparent);
@@ -15,7 +15,7 @@
     .lead {
         align-items: start;
         padding: 0 3.4rem;
-        margin: -2rem -3rem 0;
+        margin: -3rem -3rem 0;
         height: 450px;
         font-size: 1.6rem;
 
@@ -30,7 +30,7 @@
 @include respond(lg) {
     .lead {
         padding: 0 8rem;
-        margin: -4rem -8rem 0;
+        margin: -8rem -8rem 0;
         height: 490px;
     }
 }

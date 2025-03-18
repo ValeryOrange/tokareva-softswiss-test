@@ -1,4 +1,20 @@
 // typography
+p {
+    margin-bottom: 2rem;
+    line-height: 100%;
+    color: $white-transparent;
+    font-weight: $font-weight-bold;
+    line-height: 1.2;
+
+    @include respond(md) {
+        font-size: 1.6rem;
+    }
+
+    @include respond(lg) {
+        font-size: 2rem;
+    }
+}
+
 em.yellow {
     color: $yellow;
 }
@@ -7,6 +23,7 @@ em.pink {
     color: $pink;
 }
 
+// links
 a em.yellow,
 a:visited em {
     color: $yellow;
@@ -14,4 +31,15 @@ a:visited em {
 
 a:hover em.yellow {
     color: $yellow-transparent;
+}
+
+// blocks
+section {
+    padding-top: 5rem;
+}
+
+@include respond(lg) {
+    section {
+        padding-top: 6rem;
+    }
 }

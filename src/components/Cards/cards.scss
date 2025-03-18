@@ -1,9 +1,5 @@
 .cards {
-    &__title {
-        margin-bottom: 3rem;
-        font-size: 1.8rem;
-    }
-
+    padding-top: 5rem;
     &__list {
         display: grid;
         gap: 3rem;
@@ -18,9 +14,7 @@
 
 @include respond(md) {
     .cards {
-        &__title {
-            font-size: 2.4rem;
-        }
+        padding-top: 5.5rem;
         &__list {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -29,10 +23,7 @@
 
 @include respond(lg) {
     .cards {
-        &__title {
-            margin-bottom: 4rem;
-            font-size: 3.2rem;
-        }
+        padding-top: 6rem;
         &__list {
             grid-template-columns: repeat(2, 1fr);
         }

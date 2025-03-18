@@ -1,5 +1,6 @@
 // base colors
 $white: #fff;
+$white-transparent: rgba(255, 255, 255, 0.6);
 $black: #000;
 $black-transparent: rgba(0, 0, 0, 0);
 $grey-transparent: rgba(15, 20, 32, 0.79);
@@ -7,10 +8,6 @@ $blue: #304571;
 $yellow: #ebff00;
 $yellow-transparent: rgba(235, 255, 0, 0.6);
 $pink: #ff70d9;
-
-// margin and padding
-$gap-s: 20px;
-$gap-m: 25px;
 
 // font-weight
 $font-weight-regular: 400;

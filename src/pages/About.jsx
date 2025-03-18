@@ -1,16 +1,16 @@
 import React from 'react';
 import Lead from '@components/Lead';
-import PageTitle from '@components/PageTitle';
+import Title from '@components/Title';
 
 const LeadContent = React.memo(() => (
     <>
-        <PageTitle>
+        <Title>
             Learn more about <em className="pink">Go Space</em>
-        </PageTitle>
-        <PageTitle size="h2">
+        </Title>
+        <Title size="h2">
             This is a boring lead without{' '}
             <em className="yellow">a background image</em>
-        </PageTitle>
+        </Title>
     </>
 ));
 

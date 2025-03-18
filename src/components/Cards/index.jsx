@@ -1,11 +1,12 @@
 import React from 'react';
 import Card from '@components/Card';
+import Title from '@components/Title';
 import './cards.scss';
 
 const CardsList = ({ cards = [], title }) => {
     return (
         <div className="cards">
-            <h3 className="cards__title">{title}</h3>
+            <Title size="h3">{title}</Title>
             {cards.length ? (
                 <ul className="cards__list">
                     {cards.map((card, index) => (
