@@ -9,8 +9,8 @@ const CardsList = ({ cards = [], title }) => {
             <Title size="h3">{title}</Title>
             {cards.length ? (
                 <ul className="cards__list">
-                    {cards.map((card, index) => (
-                        <li key={index} className="cards__item">
+                    {cards.map((card) => (
+                        <li key={card.id} className="cards__item">
                             <Card {...card} />
                         </li>
                     ))}
