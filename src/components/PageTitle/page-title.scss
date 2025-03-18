@@ -1,0 +1,14 @@
+.pageTitle {
+    text-align: center;
+
+    &_h1 {
+        font-size: 3.6em;
+        font-weight: $font-weight-super;
+    }
+}
+
+@include respond(md) {
+    .pageTitle {
+        text-align: left;
+    }
+}

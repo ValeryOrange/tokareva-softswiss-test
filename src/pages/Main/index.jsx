@@ -1,22 +1,27 @@
 import React from 'react';
-import Lead from '@/components/Lead';
+import Lead from '@components/Lead';
+import PageTitle from '@components/PageTitle';
 import './main.scss';
 
-const More = () => {
-    return <div>This is a more text without a background image</div>;
-};
+const More = () => <div>This is a more text without a background image</div>;
+
+const LeadContent = () => (
+    <>
+        <PageTitle>
+            Discover the vast expanses of <em className="pink">space</em>
+        </PageTitle>
+        <PageTitle size="h2">
+            Where the possibilities are <em className="yellow">endless!</em>
+        </PageTitle>
+    </>
+);
 
 const MainPage = () => {
     return (
-        <div className="main-page">
-            <Lead
-                className="main-page__lead"
-                title="Discover the vast expanses of"
-                titleEm="space"
-                caption="Where the possibilities are"
-                captionEm="endless!"
-                more={<More />}
-            />
+        <div className="mainPage">
+            <Lead className="mainPage__lead" more={<More />}>
+                <LeadContent />
+            </Lead>
         </div>
     );
 };

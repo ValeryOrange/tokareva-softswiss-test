@@ -1,4 +1,4 @@
-.main-page {
+.mainPage {
     &__lead {
         justify-content: end;
         background:
@@ -12,7 +12,7 @@
     }
 }
 @include respond(md) {
-    .main-page {
+    .mainPage {
         & &__lead {
             justify-content: center;
             // эти паддинги основаны на размерах фоновой картинки, поэтому в пикселях
@@ -29,7 +29,7 @@
     }
 }
 @include respond(lg) {
-    .main-page {
+    .mainPage {
         & &__lead {
             padding-right: 500px;
             background-position:

@@ -9,12 +9,6 @@
     font-size: 1rem;
     background: linear-gradient($black-transparent, $grey-transparent);
 
-    &__title {
-        text-align: center;
-        font-size: 3.6em;
-        font-weight: $font-weight-super;
-    }
-
     &__subtitle {
         font-size: 1.6em;
         font-weight: $font-weight-super;
@@ -28,10 +22,6 @@
         padding: 0 3.4rem;
         height: 450px;
         font-size: 1.3rem;
-
-        &__title {
-            text-align: left;
-        }
     }
 }
 

@@ -6,13 +6,13 @@ import './main-layout.scss';
 
 const MainLayout = () => {
     return (
-        <div className="main-layout">
+        <main className="mainLayout">
             <Header />
-            <div className="main-layout__content">
+            <div className="mainLayout__content">
                 <Outlet />
             </div>
             <Footer />
-        </div>
+        </main>
     );
 };
 
