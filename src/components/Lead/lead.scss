@@ -1,18 +1,20 @@
 .lead {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    gap: $gap-s;
-    padding: 0 $padding-l $padding-md;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 5rem 3.4rem;
     height: 420px;
+    font-size: 1rem;
+    background: linear-gradient($black-transparent, $grey-transparent);
 
     &__title {
-        font-size: $font-size-xl;
+        font-size: 3.6em;
         font-weight: $font-weight-super;
     }
 
     &__subtitle {
-        font-size: $font-size-m;
+        font-size: 1.6em;
         font-weight: $font-weight-super;
     }
 }
@@ -20,32 +22,17 @@
 @include respond(md) {
     .lead {
         align-items: start;
-        justify-content: center;
-        gap: $gap-m;
-        padding: 0 $padding-md;
+        gap: 5rem;
+        padding: 0 3.4rem;
         height: 450px;
-
-        &__title {
-            font-size: $font-size-grand;
-        }
-
-        &__subtitle {
-            font-size: $font-size-l;
-        }
+        font-size: 1.3rem;
     }
 }
 
 @include respond(lg) {
     .lead {
-        padding: 0 $padding-xl;
+        padding: 0 8rem;
         height: 490px;
-
-        &__title {
-            font-size: $font-size-super;
-        }
-
-        &__subtitle {
-            font-size: $font-size-l;
-        }
+        font-size: 2rem;
     }
 }
