@@ -4,4 +4,24 @@
     grid-template-columns: 100%;
     min-height: 100vh;
     font-size: 1rem;
+
+    &__content {
+        padding: 1rem 2rem;
+    }
+}
+
+@include respond(md) {
+    .mainLayout {
+        &__content {
+            padding: 2rem 3rem;
+        }
+    }
+}
+
+@include respond(lg) {
+    .mainLayout {
+        &__content {
+            padding: 4rem 8rem;
+        }
+    }
 }

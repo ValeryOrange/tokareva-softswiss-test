@@ -11,7 +11,11 @@ const Lead = ({ className, children, more }) => {
     return (
         <div className={computedClassName}>
             {children}
-            {more && <Button className="lead__button">Learn more</Button>}
+            {more && (
+                <Button className="lead__button" variant="fill">
+                    Learn more
+                </Button>
+            )}
         </div>
     );
 };

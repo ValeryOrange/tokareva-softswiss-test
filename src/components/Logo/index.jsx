@@ -5,4 +5,4 @@ const Logo = ({ className }) => {
     return <img src={logoIcon} className={className} alt="Go logo" />;
 };
 
-export default React.memo(Logo);
+export default Logo;

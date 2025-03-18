@@ -1,8 +1,8 @@
 import React from 'react';
-import Lead from '@/components/Lead';
+import Lead from '@components/Lead';
 import PageTitle from '@components/PageTitle';
 
-const LeadContent = () => (
+const LeadContent = React.memo(() => (
     <>
         <PageTitle>
             Learn more about <em className="pink">Go Space</em>
@@ -12,7 +12,7 @@ const LeadContent = () => (
             <em className="yellow">a background image</em>
         </PageTitle>
     </>
-);
+));
 
 const About = () => (
     <div className="aboutPage">

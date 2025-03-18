@@ -1,0 +1,44 @@
+.cards {
+    &__title {
+        margin-bottom: 3rem;
+        font-size: 1.8rem;
+    }
+
+    &__list {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: 1fr;
+        font-size: 1.6rem;
+
+        &__item {
+            width: 100%;
+        }
+    }
+}
+
+@include respond(md) {
+    .cards {
+        &__title {
+            font-size: 2.4rem;
+        }
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@include respond(lg) {
+    .cards {
+        &__title {
+            margin-bottom: 4rem;
+            font-size: 3.2rem;
+        }
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__item:nth-child(3n + 1) {
+            grid-column: span 2;
+        }
+    }
+}

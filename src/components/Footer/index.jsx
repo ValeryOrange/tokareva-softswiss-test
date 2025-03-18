@@ -12,6 +12,7 @@ const Footer = () => {
                 className="footer__img"
                 width="130"
                 height="148"
+                loading="lazy"
             />
             <NavLink className="footer__link" to="/about">
                 <em className="yellow">Exciting space adventure!</em>

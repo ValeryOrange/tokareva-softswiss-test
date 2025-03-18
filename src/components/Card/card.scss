@@ -1,0 +1,45 @@
+.card {
+    container-type: inline-size;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 350px;
+    padding: 2.4rem;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__title {
+        margin-bottom: 2.4rem;
+        font-size: clamp(4rem, 6.5cqi, 7.4rem);
+        font-weight: $font-weight-super;
+    }
+
+    &__caption {
+        margin-bottom: 2.4rem;
+        font-size: 1.6rem;
+        font-size: clamp(1.6rem, 4cqi, 2.6rem);
+        font-weight: $font-weight-super;
+    }
+
+    & &__btn {
+        font-size: 1.6rem;
+    }
+}
+
+@include respond(lg) {
+    .card {
+        padding: 3.4rem;
+
+        &__title {
+            margin-bottom: 3rem;
+        }
+
+        & &__btn {
+            font-size: 2.2rem;
+        }
+    }
+}
