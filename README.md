@@ -1,6 +1,13 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It uses HashRouter for routing.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Routing
+This project uses `HashRouter` from `react-router-dom` for routing.
+
+## Browser Support
+The project utilizes **Container Queries** and the `clamp()` function for responsive design.
+As a result, **Internet Explorer 11 and older versions are not supported**.
 
 npm@10.5.0
 node@20.12.2

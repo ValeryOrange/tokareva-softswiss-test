@@ -2,10 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 160px;
+    height: 33px;
     border-radius: 10rem;
-    padding: 0.7em 2em;
-    font-size: 1.2em;
     font-weight: $font-weight-super;
+    font-size: 1.6rem;
 
     &_outlined {
         background: none;
