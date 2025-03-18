@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.7141bb46.css",
-    "main.js": "/static/js/main.2d2254fd.js",
-    "static/media/4xgalaxy.png": "/static/media/4xgalaxy.e05d3e5fd700155085f3.png",
-    "static/media/2xearth.png": "/static/media/2xearth.62182a6605ce807bd9d7.png",
-    "static/media/2xrocket.png": "/static/media/2xrocket.4c6cae8bcc1398cfe864.png",
-    "static/media/logo.svg": "/static/media/logo.2f35e0907844c5e8b5672a9c6a0a4d98.svg",
-    "index.html": "/index.html",
-    "main.7141bb46.css.map": "/static/css/main.7141bb46.css.map",
-    "main.2d2254fd.js.map": "/static/js/main.2d2254fd.js.map"
+    "main.css": "/tokareva-softswiss-test/static/css/main.5697393c.css",
+    "main.js": "/tokareva-softswiss-test/static/js/main.abcadd0d.js",
+    "static/media/4xgalaxy.png": "/tokareva-softswiss-test/static/media/4xgalaxy.e05d3e5fd700155085f3.png",
+    "static/media/2xearth.png": "/tokareva-softswiss-test/static/media/2xearth.62182a6605ce807bd9d7.png",
+    "static/media/2xrocket.png": "/tokareva-softswiss-test/static/media/2xrocket.4c6cae8bcc1398cfe864.png",
+    "static/media/logo.svg": "/tokareva-softswiss-test/static/media/logo.2f35e0907844c5e8b5672a9c6a0a4d98.svg",
+    "index.html": "/tokareva-softswiss-test/index.html",
+    "main.5697393c.css.map": "/tokareva-softswiss-test/static/css/main.5697393c.css.map",
+    "main.abcadd0d.js.map": "/tokareva-softswiss-test/static/js/main.abcadd0d.js.map"
   },
   "entrypoints": [
-    "static/css/main.7141bb46.css",
-    "static/js/main.2d2254fd.js"
+    "static/css/main.5697393c.css",
+    "static/js/main.abcadd0d.js"
   ]
 }
