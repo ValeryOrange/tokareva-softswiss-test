@@ -17,4 +17,4 @@ const Routing = () => {
     );
 };
 
-export default React.memo(Routing);
+export default Routing;
