@@ -20,12 +20,23 @@
         }
     }
 
-    &_fill {
+    &_contained {
         background: $yellow;
         color: $black;
 
         &:hover {
             background: $yellow-transparent;
+            cursor: pointer;
+        }
+    }
+
+    &_text {
+        background: none;
+        color: $yellow;
+        font-size: inherit;
+
+        &:hover {
+            color: $yellow-transparent;
             cursor: pointer;
         }
     }

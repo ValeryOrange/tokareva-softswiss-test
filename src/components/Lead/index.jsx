@@ -12,7 +12,7 @@ const Lead = ({ className, children, more }) => {
         <div className={computedClassName}>
             {children}
             {more && (
-                <Button className="lead__button" variant="fill">
+                <Button className="lead__button" variant="contained">
                     Learn more
                 </Button>
             )}
