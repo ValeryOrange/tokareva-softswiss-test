@@ -2,6 +2,10 @@ import React from 'react';
 import Lead from '@/components/Lead';
 import './main.scss';
 
+const More = () => {
+    return <div>This is a more text without a background image</div>;
+};
+
 const MainPage = () => {
     return (
         <div className="main-page">
@@ -11,6 +15,7 @@ const MainPage = () => {
                 titleEm="space"
                 caption="Where the possibilities are"
                 captionEm="endless!"
+                more={<More />}
             />
         </div>
     );
