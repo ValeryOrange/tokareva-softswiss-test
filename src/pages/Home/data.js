@@ -9,7 +9,7 @@ export const cardsData = [
     },
     {
         id: `${Date.now() - Math.random()}`,
-        image: `${process.env.PUBLIC_URL}/assets/4xbrown-nebula-edit.png`,
+        image: `${process.env.PUBLIC_URL}/assets/4xbrown-nebula.png`,
         title: 'Space is not just stars and planets',
         caption: 'It is a majestic journey to',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget ullamcorper mi. Nam enim odio, laoreet in porta vitae, porttitor in leo. Aenean euismod enim ac semper vehicula. Mauris aliquet vestibulum lectus, et venenatis odio molestie in. Quisque sollicitudin ligula vitae quam porta, ac ornare neque dignissim. Integer massa sem, pulvinar luctus orci sit amet, interdum congue lacus. Aenean eget blandit arcu. Maecenas non bibendum nibh. Phasellus facilisis ipsum id ipsum consequat sollicitudin. Nulla ac faucibus ex.',
@@ -37,7 +37,7 @@ export const cardsData = [
     },
     {
         id: `${Date.now() - Math.random()}`,
-        image: `${process.env.PUBLIC_URL}/assets/4xbrown-nebula-edit.png`,
+        image: `${process.env.PUBLIC_URL}/assets/4xbrown-nebula.png`,
         title: 'Space is not just stars and planets',
         caption: 'It is a majestic journey to',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget ullamcorper mi. Nam enim odio, laoreet in porta vitae, porttitor in leo. Aenean euismod enim ac semper vehicula. Mauris aliquet vestibulum lectus, et venenatis odio molestie in. Quisque sollicitudin ligula vitae quam porta, ac ornare neque dignissim. Integer massa sem, pulvinar luctus orci sit amet, interdum congue lacus. Aenean eget blandit arcu. Maecenas non bibendum nibh. Phasellus facilisis ipsum id ipsum consequat sollicitudin. Nulla ac faucibus ex.',
@@ -65,7 +65,7 @@ export const cardsData = [
     },
     {
         id: `${Date.now() - Math.random()}`,
-        image: `${process.env.PUBLIC_URL}/assets/4xbrown-nebula-edit.png`,
+        image: `${process.env.PUBLIC_URL}/assets/4xbrown-nebula.png`,
         title: 'Space is not just stars and planets',
         caption: 'It is a majestic journey to',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget ullamcorper mi. Nam enim odio, laoreet in porta vitae, porttitor in leo. Aenean euismod enim ac semper vehicula. Mauris aliquet vestibulum lectus, et venenatis odio molestie in. Quisque sollicitudin ligula vitae quam porta, ac ornare neque dignissim. Integer massa sem, pulvinar luctus orci sit amet, interdum congue lacus. Aenean eget blandit arcu. Maecenas non bibendum nibh. Phasellus facilisis ipsum id ipsum consequat sollicitudin. Nulla ac faucibus ex.',
