@@ -23,7 +23,7 @@
 
 @include respond(md) {
     .nav-bar {
-        &__button {
+        .nav-bar__button {
             display: none;
         }
 

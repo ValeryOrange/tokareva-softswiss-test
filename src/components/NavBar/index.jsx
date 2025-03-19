@@ -5,30 +5,29 @@ import burger from './burger.svg';
 import './nav-bar.scss';
 
 /**
- * Menu component renders the navigation bar.
+ * NavBar component renders the navigation bar.
  *
  * @component
  * @example
  * return (
- *   <Menu />
+ *   <NavBar />
  * )
  */
-const Menu = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
-    function toggleMenu() {
-        setMenuOpen(!menuOpen);
+const NavBar = () => {
+    const [navBarOpen, setNavBarOpen] = useState(false);
+    function toggleNavBar() {
+        setNavBarOpen(!navBarOpen);
     }
 
     return (
-        <nav className="nav-bar md:flex md:items-center">
+        <nav className="nav-bar">
             <Button
                 className="nav-bar__button"
-                onClick={toggleMenu}
-                variant="icon"
+                onClick={toggleNavBar}
                 icon={burger}
             />
             <ul
-                className={`nav-bar__list${menuOpen ? ' nav-bar__list_open' : ''}`}
+                className={`nav-bar__list${navBarOpen ? ' nav-bar__list_open' : ''}`}
             >
                 <li className="nav-bar__item">
                     <NavLink to="/" title="Home" className="nav-bar__link">
@@ -54,4 +53,4 @@ const Menu = () => {
     );
 };
 
-export default Menu;
+export default NavBar;
