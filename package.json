@@ -44,9 +44,9 @@
         ]
     },
     "devDependencies": {
+        "@babel/eslint-parser": "^7.26.10",
         "@craco/craco": "^7.1.0",
         "@eslint/js": "^9.22.0",
-        "babel-eslint": "^10.1.0",
         "concurrently": "^9.1.2",
         "eslint": "^8.57.1",
         "eslint-config-prettier": "^10.1.1",

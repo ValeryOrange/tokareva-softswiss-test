@@ -3,7 +3,7 @@ import js from '@eslint/js';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import prettier from 'eslint-plugin-prettier';
-import jsxParser from 'babel-eslint';
+import babelParser from '@babel/eslint-parser';
 
 export default [
     js.configs.recommended,
@@ -22,7 +22,13 @@ export default [
             globals: globals.browser,
             ecmaVersion: 'latest',
             sourceType: 'module',
-            parser: jsxParser,
+            parser: babelParser,
+            parserOptions: {
+                requireConfigFile: false,
+                babelOptions: {
+                    presets: ['@babel/preset-env', '@babel/preset-react'],
+                },
+            },
         },
     },
 ];
