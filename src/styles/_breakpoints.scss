@@ -4,6 +4,11 @@ $breakpoints: (
     lg: 1240px,
 );
 
+// Mixin to generate media queries based on defined breakpoints
+// Usage:
+// @include respond(sm) { ... }
+// @include respond(md) { ... }
+// @include respond(lg) { ... }
 @mixin respond($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {
         @media (min-width: map-get($breakpoints, $breakpoint)) {

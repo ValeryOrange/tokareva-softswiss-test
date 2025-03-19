@@ -17,6 +17,7 @@
     }
 }
 
+// The @include respond(md) mixin applies styles for large screens
 @include respond(md) {
     .title {
         &_h1 {
@@ -34,6 +35,7 @@
     }
 }
 
+// The @include respond(lg) mixin applies styles for large screens
 @include respond(lg) {
     .title {
         &_h1 {

@@ -1,3 +1,4 @@
+// mock server data for main page
 export const cardsData = [
     {
         id: `${Date.now() - Math.random()}`,

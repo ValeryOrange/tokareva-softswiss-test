@@ -1,5 +1,5 @@
-.mainPage {
-    & &__lead {
+.home {
+    &__lead {
         justify-content: end;
         background:
             url('./2xearth.png') no-repeat left 15px top -100px,
@@ -11,11 +11,13 @@
             cover;
     }
 }
+
+// The @include respond(md) mixin applies styles for large screens
 @include respond(md) {
-    .mainPage {
-        & &__lead {
+    .home {
+        &__lead {
             justify-content: center;
-            // эти паддинги основаны на размерах фоновой картинки, поэтому в пикселях
+            // these paddings are based on the background image sizes, so they are in pixels
             padding-right: 260px;
             background-position:
                 right -100px top 25px,
@@ -28,9 +30,11 @@
         }
     }
 }
+
+// The @include respond(lg) mixin applies styles for large screens
 @include respond(lg) {
-    .mainPage {
-        & &__lead {
+    .home {
+        &__lead {
             padding-right: 500px;
             background-position:
                 right 90px top 60px,

@@ -1,4 +1,4 @@
-.mainLayout {
+.main-layout {
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 100%;
@@ -10,16 +10,18 @@
     }
 }
 
+// The @include respond(md) mixin applies styles for large screens
 @include respond(md) {
-    .mainLayout {
+    .main-layout {
         &__content {
             padding: 3rem 3rem;
         }
     }
 }
 
+// The @include respond(lg) mixin applies styles for large screens
 @include respond(lg) {
-    .mainLayout {
+    .main-layout {
         &__content {
             padding: 8rem 8rem;
         }

@@ -1,9 +1,9 @@
-import globals from "globals";
-import js from "@eslint/js";
-import react from "eslint-plugin-react";
-import reactHooks from "eslint-plugin-react-hooks";
-import prettier from "eslint-plugin-prettier";
-import jsxParser from "babel-eslint";
+import globals from 'globals';
+import js from '@eslint/js';
+import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
+import prettier from 'eslint-plugin-prettier';
+import jsxParser from 'babel-eslint';
 
 export default [
     js.configs.recommended,
@@ -14,19 +14,15 @@ export default [
             prettier,
         },
         rules: {
-            "prettier/prettier": "error",
-            "react/prop-types": "off"
+            'prettier/prettier': 'error',
+            'react/prop-types': 'off'
         },
-        files: ["**/*.{js,mjs,cjs,jsx,sass,scss,css}"],
+        files: ['**/*.{js,mjs,cjs,jsx}'],
         languageOptions: {
             globals: globals.browser,
             ecmaVersion: 'latest',
             sourceType: 'module',
             parser: jsxParser,
-        },
-        rules: {
-            "prettier/prettier": "error",
-            "react/prop-types": "off",
         },
     },
 ];

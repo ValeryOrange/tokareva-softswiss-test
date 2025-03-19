@@ -12,6 +12,7 @@
     }
 }
 
+// The @include respond(md) mixin applies styles for large screens
 @include respond(md) {
     .cards {
         padding-top: 5.5rem;
@@ -21,6 +22,7 @@
     }
 }
 
+// The @include respond(lg) mixin applies styles for large screens
 @include respond(lg) {
     .cards {
         padding-top: 6rem;

@@ -2,47 +2,58 @@
 @use 'breakpoints' as *;
 
 // typography
-p {
+.paragraph {
     margin-bottom: 2rem;
-    line-height: 100%;
     color: $white-transparent;
     font-weight: $font-weight-bold;
     line-height: 1.2;
 
+    // The @include respond(md) mixin applies styles for large screens
     @include respond(md) {
         font-size: 1.6rem;
     }
 
+    // The @include respond(lg) mixin applies styles for large screens
     @include respond(lg) {
         font-size: 2rem;
     }
 }
 
-em.yellow {
-    color: $yellow;
-}
+.em {
+    &_yellow {
+        color: $yellow;
+    }
 
-em.pink {
-    color: $pink;
+    &_pink {
+        color: $pink;
+    }
 }
 
 // links
-a em.yellow,
-a:visited em {
-    color: $yellow;
-}
+.link {
+    & .em.em_yellow,
+    &:visite .em.em_yellow {
+        color: $yellow;
+    }
 
-a:hover em.yellow {
-    color: $yellow-transparent;
+    &:hover .em.em_yellow {
+        color: $yellow-transparent;
+    }
 }
 
 // blocks
 section {
     padding-top: 5rem;
-}
+    font-size: 1.4rem;
 
-@include respond(lg) {
-    section {
+    // The @include respond(md) mixin applies styles for large screens
+    @include respond(md) {
+        font-size: 1.6rem;
+    }
+
+    // The @include respond(lg) mixin applies styles for large screens
+    @include respond(lg) {
         padding-top: 6rem;
+        font-size: 2rem;
     }
 }

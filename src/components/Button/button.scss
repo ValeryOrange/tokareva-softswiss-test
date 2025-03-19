@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    // default size
     width: 160px;
     height: 33px;
     border-radius: 10rem;
@@ -31,6 +32,7 @@
     }
 
     &_text {
+        display: inline-block;
         background: none;
         color: $yellow;
         font-size: inherit;

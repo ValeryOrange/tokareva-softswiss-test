@@ -11,6 +11,7 @@
     }
 }
 
+// The @include respond(md) mixin applies styles for large screens
 @include respond(md) {
     .header {
         height: 80px;
@@ -18,6 +19,7 @@
     }
 }
 
+// The @include respond(lg) mixin applies styles for large screens
 @include respond(lg) {
     .header {
         padding: 0 9rem;

@@ -3,21 +3,36 @@ import { NavLink } from 'react-router-dom';
 import rocket from './2xrocket.png';
 import './footer.scss';
 
+/**
+ * Footer component that displays a footer section with an image and a navigation link.
+ *
+ * @component
+ * @example
+ * return (
+ *   <Footer />
+ * )
+ *
+ * @returns {JSX.Element} The rendered footer component.
+ */
 const Footer = () => {
     return (
-        <div className="footer">
+        <footer className="footer">
             <img
                 src={rocket}
-                alt="rocket"
+                alt="Rocket flying through space"
                 className="footer__img"
                 width="130"
                 height="148"
                 loading="lazy"
             />
-            <NavLink className="footer__link" to="/about">
-                <em className="yellow">Exciting space adventure!</em>
+            <NavLink
+                className="link footer__link"
+                to="/about"
+                title="Learn more about our exciting space adventure"
+            >
+                <em className="em em_yellow">Exciting space adventure!</em>
             </NavLink>
-        </div>
+        </footer>
     );
 };
 

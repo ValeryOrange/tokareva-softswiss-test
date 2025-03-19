@@ -5,17 +5,17 @@ import Title from '@components/Title';
 const LeadContent = React.memo(() => (
     <>
         <Title>
-            Learn more about <em className="pink">Go Space</em>
+            Learn more about <em className="em em_pink">Go Space</em>
         </Title>
         <Title size="h2">
             This is a boring lead without{' '}
-            <em className="yellow">a background image</em>
+            <em className="em em_yellow">a background image</em>
         </Title>
     </>
 ));
 
 const About = () => (
-    <div className="aboutPage">
+    <div>
         <Lead>
             <LeadContent />
         </Lead>

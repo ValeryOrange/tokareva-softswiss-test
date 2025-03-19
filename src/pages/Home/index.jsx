@@ -4,31 +4,28 @@ import Title from '@components/Title';
 import Cards from '@components/Cards';
 import Button from '@components/Button';
 import { cardsData } from './data';
-import './main.scss';
+import './home.scss';
 
-const More = () => <div>This is a more text without a background image</div>;
-
-const LeadContent = () => (
-    <>
-        <Title>
-            Discover the vast expanses of <em className="pink">space</em>
-        </Title>
-        <Title size="h2">
-            Where the possibilities are <em className="yellow">endless!</em>
-        </Title>
-    </>
-);
-
-const MainPage = () => {
+/**
+ * Home component renders the home page of the application.
+ * It includes a lead section, a cards section, and a section with information about space journeys.
+ *
+ * @component
+ * @example
+ * return (
+ *   <Home />
+ * )
+ */
+const Home = () => {
     return (
-        <div className="mainPage">
-            <Lead className="mainPage__lead" more={<More />}>
+        <div className="home">
+            <Lead className="home__lead" more={<More />}>
                 <LeadContent />
             </Lead>
             <Cards title="Offer" cards={cardsData} />
             <section>
                 <Title size="h3">Embark on a space journey</Title>
-                <p>
+                <p className="paragraph">
                     Travelling into space is one of the most exciting and
                     unforgettable adventures that can change your life forever.
                     And if you have ever dreamed of exploring stars, planets and
@@ -42,10 +39,24 @@ const MainPage = () => {
                     adventure in space. We offer various options for space
                     excursions.
                 </p>
-                <Button varian="text">Read more</Button>
+                <Button variant="text">Read more</Button>
             </section>
         </div>
     );
 };
 
-export default MainPage;
+const More = () => <div>This is a more text without a background image</div>;
+
+const LeadContent = () => (
+    <>
+        <Title>
+            Discover the vast expanses of <em className="em em_pink">space</em>
+        </Title>
+        <Title size="h2">
+            Where the possibilities are{' '}
+            <em className="em em_yellow">endless!</em>
+        </Title>
+    </>
+);
+
+export default Home;
