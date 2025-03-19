@@ -10,10 +10,11 @@ import './button.scss';
  * @param {string} [props.href] - The URL to link to. If provided, the component renders as a NavLink.
  * @param {string} props.children - The content to be displayed inside the button, text node.
  * @param {'button' | 'submit' | 'reset'} [props.type='button'] - The type of the button element. Defaults to 'button'.
- * @param {function} [props.onClick] - The optional click event handler. If not provided, the component renders as a div.
- * @param {'outlined' | 'contained' | 'text'} [props.variant='outlined'] - The variant of the button. Defaults to 'outlined'.
+ * @param {function} [props.onClick] - The optional click event handler. If not provided, the component renders as a div. If `href` is provided, `onClick` will be ignored.
+ * @param {'outlined' | 'contained' | 'text' | 'icon'} [props.variant='outlined'] - The variant of the button. Defaults to 'outlined'.
  * @param {string} [props.className] - Additional class names to apply to the button.
- * @param {string} [props.icon] - The icon to be displayed inside the button.
+ * @param {string} [props.icon] - The URL of the icon to display inside the button.
+ * @param {string} [props.iconAlt] - The alt text for the icon image. Defaults to 'Button icon' if not provided.
  *
  * @returns {JSX.Element} The rendered button component.
  */
@@ -25,6 +26,7 @@ const Button = ({
     variant = 'outlined',
     className,
     icon,
+    iconAlt,
 }) => {
     const computedClassName = useMemo(
         () =>
@@ -32,7 +34,6 @@ const Button = ({
                 'button',
                 `button_${variant}`,
                 { button_link: href },
-                { button_icon: icon },
                 className
             ),
         [variant, href, className, icon]
@@ -54,7 +55,11 @@ const Button = ({
     return (
         <button className={computedClassName} type={type} onClick={onClick}>
             {icon && (
-                <img src={icon} alt="Button icon" className="button__image" />
+                <img
+                    src={icon}
+                    alt={iconAlt || 'Button icon'}
+                    className="button__image"
+                />
             )}
             {children}
         </button>

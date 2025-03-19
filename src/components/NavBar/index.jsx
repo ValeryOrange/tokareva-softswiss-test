@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Button from '@components/Button';
 import burger from './burger.svg';
+import close from './close.svg';
 import './nav-bar.scss';
 
 /**
@@ -15,16 +16,21 @@ import './nav-bar.scss';
  */
 const NavBar = () => {
     const [navBarOpen, setNavBarOpen] = useState(false);
-    function toggleNavBar() {
+    const toggleNavBar = () => {
         setNavBarOpen(!navBarOpen);
-    }
+    };
+
+    const btnIcon = navBarOpen ? close : burger;
+    const iconAlt = navBarOpen ? 'Close Menu' : 'Open Menu';
 
     return (
         <nav className="nav-bar">
             <Button
                 className="nav-bar__button"
                 onClick={toggleNavBar}
-                icon={burger}
+                icon={btnIcon}
+                variant="icon"
+                iconAlt={iconAlt}
             />
             <ul
                 className={`nav-bar__list${navBarOpen ? ' nav-bar__list_open' : ''}`}
