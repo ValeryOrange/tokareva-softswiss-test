@@ -1,3 +1,38 @@
 .nav-bar {
+    position: relative;
     font-size: 1.8rem;
+
+    &__button {
+        display: block;
+    }
+
+    &__list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+
+        &_open {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@include respond(md) {
+    .nav-bar {
+        &__button {
+            display: none;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            position: static;
+            width: auto;
+            background: transparent;
+        }
+    }
 }

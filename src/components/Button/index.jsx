@@ -11,7 +11,7 @@ import './button.scss';
  * @param {string} props.children - The content to be displayed inside the button, text node.
  * @param {'button' | 'submit' | 'reset'} [props.type='button'] - The type of the button element. Defaults to 'button'.
  * @param {function} [props.onClick] - The optional click event handler. If not provided, the component renders as a div.
- * @param {'outlined' | 'contained' | 'text'} [props.variant='outlined'] - The variant of the button. Defaults to 'outlined'.
+ * @param {'outlined' | 'contained' | 'text' | 'icon'} [props.variant='outlined'] - The variant of the button. Defaults to 'outlined'.
  * @param {string} [props.className] - Additional class names to apply to the button.
  *
  * @returns {JSX.Element} The rendered button component.

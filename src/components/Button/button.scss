@@ -8,16 +8,19 @@
     border-radius: 10rem;
     font-weight: $font-weight-super;
     font-size: 1.6rem;
+    background: none;
+
+    &:hover {
+        cursor: pointer;
+    }
 
     &_outlined {
-        background: none;
         border: 2px solid $yellow;
         color: $yellow;
 
         &:hover {
             border-color: $yellow-transparent;
             color: $yellow-transparent;
-            cursor: pointer;
         }
     }
 
@@ -27,7 +30,6 @@
 
         &:hover {
             background: $yellow-transparent;
-            cursor: pointer;
         }
     }
 
@@ -39,7 +41,12 @@
 
         &:hover {
             color: $yellow-transparent;
-            cursor: pointer;
         }
+    }
+
+    &_icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
     }
 }
