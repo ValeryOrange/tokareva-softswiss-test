@@ -11,8 +11,9 @@ import './button.scss';
  * @param {string} props.children - The content to be displayed inside the button, text node.
  * @param {'button' | 'submit' | 'reset'} [props.type='button'] - The type of the button element. Defaults to 'button'.
  * @param {function} [props.onClick] - The optional click event handler. If not provided, the component renders as a div.
- * @param {'outlined' | 'contained' | 'text' | 'icon'} [props.variant='outlined'] - The variant of the button. Defaults to 'outlined'.
+ * @param {'outlined' | 'contained' | 'text'} [props.variant='outlined'] - The variant of the button. Defaults to 'outlined'.
  * @param {string} [props.className] - Additional class names to apply to the button.
+ * @param {string} [props.icon] - The icon to be displayed inside the button.
  *
  * @returns {JSX.Element} The rendered button component.
  */
@@ -23,6 +24,7 @@ const Button = ({
     onClick,
     variant = 'outlined',
     className,
+    icon,
 }) => {
     const computedClassName = useMemo(
         () =>
@@ -30,9 +32,10 @@ const Button = ({
                 'button',
                 `button_${variant}`,
                 { button_link: href },
+                { button_icon: icon },
                 className
             ),
-        [variant, href, className]
+        [variant, href, className, icon]
     );
     if (href) {
         return (
@@ -50,6 +53,9 @@ const Button = ({
     }
     return (
         <button className={computedClassName} type={type} onClick={onClick}>
+            {icon && (
+                <img src="icon" alt="Button icon" className="button__image" />
+            )}
             {children}
         </button>
     );
