@@ -54,7 +54,7 @@ const Button = ({
     return (
         <button className={computedClassName} type={type} onClick={onClick}>
             {icon && (
-                <img src="icon" alt="Button icon" className="button__image" />
+                <img src={icon} alt="Button icon" className="button__image" />
             )}
             {children}
         </button>
