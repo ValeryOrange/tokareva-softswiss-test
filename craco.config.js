@@ -13,7 +13,7 @@ module.exports = {
                 additionalData: `
                     @use 'src/styles/breakpoints.scss' as *;
                     @use 'src/styles/variables.scss' as *;
-                `
+                `,
             },
         },
     },

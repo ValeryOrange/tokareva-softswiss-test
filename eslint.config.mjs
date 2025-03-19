@@ -15,11 +15,13 @@ export default [
         },
         rules: {
             'prettier/prettier': 'error',
-            'react/prop-types': 'off'
+            'react/prop-types': 'off',
+            'react/jsx-uses-react': 'error',
+            'react/jsx-uses-vars': 'error',
         },
         files: ['**/*.{js,mjs,cjs,jsx}'],
         languageOptions: {
-            globals: globals.browser,
+            globals: { ...globals.browser, ...globals.node },
             ecmaVersion: 'latest',
             sourceType: 'module',
             parser: babelParser,
