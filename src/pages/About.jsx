@@ -3,11 +3,11 @@ import Lead from '@components/Lead';
 import Title from '@components/Title';
 
 const About = () => (
-    <div>
+    <>
         <Lead>
             <LeadContent />
         </Lead>
-    </div>
+    </>
 );
 
 const LeadContent = () => (

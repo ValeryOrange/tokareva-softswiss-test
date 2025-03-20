@@ -33,6 +33,26 @@
             position: static;
             width: auto;
             background: transparent;
+            gap: 5rem;
+        }
+
+        &__link:hover {
+            background: linear-gradient(to right, $yellow, $pink);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        &__link:hover &__path {
+            fill: url(#gradient);
+        }
+    }
+}
+
+@include respond(md) {
+    .nav-bar {
+        &__list {
+            gap: 6rem;
         }
     }
 }
