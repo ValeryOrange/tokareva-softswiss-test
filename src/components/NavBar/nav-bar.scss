@@ -1,5 +1,4 @@
 .nav-bar {
-    position: relative;
     font-size: 1.8rem;
 
     &__button {
@@ -9,14 +8,28 @@
     &__list {
         display: none;
         position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: white;
+        top: $header-height-sm;
+        right: 0;
+        width: 100vw;
+        height: 100%;
+        background-color: $blue;
 
         &_open {
             display: flex;
             flex-direction: column;
+            padding: 5rem;
+        }
+    }
+
+    &__item {
+        padding: 1.5rem 0;
+        border-bottom: 1px solid $white-transparent;
+        font-size: 2.2rem;
+        &-cart {
+            &:after {
+                content: 'Cart';
+                padding-left: 1rem;
+            }
         }
     }
 }
@@ -45,6 +58,17 @@
 
         &__link:hover &__path {
             fill: url(#gradient);
+        }
+
+        &__item {
+            padding: 0;
+            border: none;
+            font-size: inherit;
+            &-cart {
+                &:after {
+                    content: '';
+                }
+            }
         }
     }
 }

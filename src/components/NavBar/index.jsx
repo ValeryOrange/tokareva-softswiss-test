@@ -17,7 +17,11 @@ import './nav-bar.scss';
 const NavBar = () => {
     const [navBarOpen, setNavBarOpen] = useState(false);
     const toggleNavBar = () => {
-        setNavBarOpen(!navBarOpen);
+        setNavBarOpen((prev) => {
+            const newState = !prev;
+            document.body.style.overflow = newState ? 'hidden' : 'auto';
+            return newState;
+        });
     };
 
     const btnIcon = navBarOpen ? close : burger;
@@ -49,7 +53,7 @@ const NavBar = () => {
                         Products
                     </NavLink>
                 </li>
-                <li className="nav-bar__item">
+                <li className="nav-bar__item nav-bar__item-cart">
                     <NavLink to="/cart" title="Cart" className="nav-bar__link">
                         <svg
                             className="nav-bar__link-image"
