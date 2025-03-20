@@ -36,7 +36,7 @@ const Button = ({
                 { button_link: href },
                 className
             ),
-        [variant, href, className, icon]
+        [variant, href, className]
     );
     if (href) {
         return (

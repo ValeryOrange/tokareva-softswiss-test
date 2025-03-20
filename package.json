@@ -1,5 +1,6 @@
 {
   "name": "softswiss-test",
+  "homepage": "https://valeryorange.github.io/tokareva-softswiss-test",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -55,15 +56,20 @@
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
     "gh-pages": "^6.3.0",
     "globals": "^16.0.0",
     "husky": "^9.1.7",
     "onchange": "^7.1.0",
     "prettier": "^3.2.5",
+    "react-refresh": "^0.16.0",
     "sass": "^1.85.1",
     "stylelint": "^14.16.1",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard-scss": "^5.0.0",
     "stylelint-prettier": "^2.0.0"
+  },
+  "overrides": {
+    "react-refresh": "^0.16.0"
   }
 }

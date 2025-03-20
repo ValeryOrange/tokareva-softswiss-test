@@ -2,7 +2,15 @@ import React from 'react';
 import Lead from '@components/Lead';
 import Title from '@components/Title';
 
-const LeadContent = React.memo(() => (
+const About = () => (
+    <div>
+        <Lead>
+            <LeadContent />
+        </Lead>
+    </div>
+);
+
+const LeadContent = () => (
     <>
         <Title>
             Learn more about <em className="em em_pink">Go Space</em>
@@ -12,13 +20,6 @@ const LeadContent = React.memo(() => (
             <em className="em em_yellow">a background image</em>
         </Title>
     </>
-));
-
-const About = () => (
-    <div>
-        <Lead>
-            <LeadContent />
-        </Lead>
-    </div>
 );
+
 export default About;

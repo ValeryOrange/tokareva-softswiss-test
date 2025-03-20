@@ -29,4 +29,4 @@ const Card = ({ title, caption, image, text }) => {
     );
 };
 
-export default Card;
+export default React.memo(Card);
