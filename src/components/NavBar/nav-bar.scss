@@ -74,15 +74,15 @@
                 color: transparent;
             }
 
-            &:hover &__path {
-                fill: url(#gradient);
-            }
-
             &-cart {
                 &:after {
                     content: '';
                 }
             }
+        }
+
+        &__link:hover &__path {
+            fill: url(#gradient);
         }
 
         &__item {
