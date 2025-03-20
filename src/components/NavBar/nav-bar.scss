@@ -6,18 +6,26 @@
     }
 
     &__list {
-        display: none;
         position: absolute;
-        top: $header-height-sm;
         right: 0;
         width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding: 5rem;
+        top: $header-height-sm;
         height: 100%;
         background-color: $blue;
+        transform: translateX(100%);
+        transition:
+            transform 0.3s ease-in-out,
+            opacity 0.3s ease-in-out;
+        opacity: 0;
+        pointer-events: none;
 
         &_open {
-            display: flex;
-            flex-direction: column;
-            padding: 5rem;
+            transform: translateX(0);
+            opacity: 1;
+            pointer-events: auto;
         }
     }
 
@@ -25,6 +33,9 @@
         padding: 1.5rem 0;
         border-bottom: 1px solid $white-transparent;
         font-size: 2.2rem;
+    }
+
+    &__link {
         &-cart {
             &:after {
                 content: 'Cart';
@@ -49,26 +60,29 @@
             gap: 5rem;
         }
 
-        &__link:hover {
-            background: linear-gradient(to right, $yellow, $pink);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-        }
+        &__link {
+            &:hover {
+                background: linear-gradient(to right, $yellow, $pink);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
 
-        &__link:hover &__path {
-            fill: url(#gradient);
+            &:hover &__path {
+                fill: url(#gradient);
+            }
+
+            &-cart {
+                &:after {
+                    content: '';
+                }
+            }
         }
 
         &__item {
             padding: 0;
             border: none;
             font-size: inherit;
-            &-cart {
-                &:after {
-                    content: '';
-                }
-            }
         }
     }
 }

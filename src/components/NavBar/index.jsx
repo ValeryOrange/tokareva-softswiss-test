@@ -58,8 +58,12 @@ const NavBar = () => {
                         Products
                     </NavLink>
                 </li>
-                <li className="nav-bar__item nav-bar__item-cart">
-                    <NavLink to="/cart" title="Cart" className="nav-bar__link">
+                <li className="nav-bar__item">
+                    <NavLink
+                        to="/cart"
+                        title="Cart"
+                        className="nav-bar__link nav-bar__link-cart"
+                    >
                         <svg
                             className="nav-bar__link-image"
                             width="24"
