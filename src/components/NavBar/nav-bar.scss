@@ -6,14 +6,14 @@
     }
 
     &__list {
-        position: absolute;
+        position: fixed;
         right: 0;
-        width: 100vw;
+        bottom: 0;
+        width: calc(100vw - 6rem);
+        height: calc(100% - $header-height-sm);
         display: flex;
         flex-direction: column;
         padding: 5rem;
-        top: $header-height-sm;
-        height: 100%;
         background-color: $blue;
         transform: translateX(100%);
         transition:
@@ -26,6 +26,7 @@
             transform: translateX(0);
             opacity: 1;
             pointer-events: auto;
+            box-shadow: -50px 0px 50px 2px $grey-transparent;
         }
     }
 
