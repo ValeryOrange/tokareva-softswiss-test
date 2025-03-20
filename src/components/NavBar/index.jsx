@@ -23,6 +23,10 @@ const NavBar = () => {
             return newState;
         });
     };
+    const closeNavBar = () => {
+        setNavBarOpen(false);
+        document.body.style.overflow = 'auto';
+    };
 
     const btnIcon = navBarOpen ? close : burger;
     const iconAlt = navBarOpen ? 'Close Menu' : 'Open Menu';
@@ -38,6 +42,7 @@ const NavBar = () => {
             />
             <ul
                 className={`nav-bar__list${navBarOpen ? ' nav-bar__list_open' : ''}`}
+                onClick={closeNavBar}
             >
                 <li className="nav-bar__item">
                     <NavLink to="/" title="Home" className="nav-bar__link">
