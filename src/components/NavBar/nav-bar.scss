@@ -21,13 +21,11 @@
             opacity 0.3s ease-in-out;
         opacity: 0;
         pointer-events: none;
-        visibility: hidden;
 
         &_open {
             transform: translateX(0);
             opacity: 1;
             pointer-events: auto;
-            visibility: visible;
             box-shadow: -50px 0px 50px 2px $grey-transparent;
         }
     }
@@ -66,7 +64,6 @@
             opacity: 1;
             padding: 0;
             transform: none;
-            visibility: visible;
         }
 
         &__link {
