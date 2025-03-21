@@ -3,21 +3,17 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+
     &__summary {
         list-style: none;
-        &::-webkit-details-marker {
+
+        &::-webkit-details-marker,
+        &::marker {
             display: none;
         }
+
         &:after {
             content: 'Learn more';
         }
-    }
-
-    &[open] &__content {
-        max-height: 500px;
-        opacity: 1;
-        transition:
-            max-height 0.3s ease-in,
-            opacity 0.3s ease-in;
     }
 }

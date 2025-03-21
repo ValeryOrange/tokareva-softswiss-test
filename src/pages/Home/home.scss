@@ -11,6 +11,10 @@
             100% 100%,
             auto;
     }
+
+    &__text-button {
+        align-self: flex-start;
+    }
 }
 
 // The @include respond(md) mixin applies styles for large screens

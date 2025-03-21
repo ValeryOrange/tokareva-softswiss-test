@@ -5,7 +5,7 @@ import './collapsing-block.scss';
 const CollapsingBlock = ({ children, btnProp }) => {
     const computedProps = {
         ...btnProp,
-        className: `collapsing-block__summary ${btnProp.className}`,
+        className: `collapsing-block__summary ${btnProp.className || ''}`,
     };
     return (
         <details className="collapsing-block">

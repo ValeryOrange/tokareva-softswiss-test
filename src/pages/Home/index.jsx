@@ -2,7 +2,6 @@ import React from 'react';
 import Lead from '@components/Lead';
 import Title from '@components/Title';
 import Cards from '@components/Cards';
-import Button from '@components/Button';
 import CollapsingBlock from '@components/CollapsingBlock';
 import { cardsData } from './data';
 import './home.scss';
@@ -40,7 +39,37 @@ const Home = () => {
                     adventure in space. We offer various options for space
                     excursions.
                 </p>
-                <Button variant="text">Read more</Button>
+                <CollapsingBlock
+                    btnProp={{
+                        className: 'home__text-button',
+                        variant: 'text',
+                    }}
+                >
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut eget ullamcorper mi. Nam enim odio, laoreet in porta
+                        vitae, porttitor in leo. Aenean euismod enim ac semper
+                        vehicula. Mauris aliquet vestibulum lectus, et venenatis
+                        odio molestie in. Quisque sollicitudin ligula vitae quam
+                        porta, ac ornare neque dignissim. Integer massa sem,
+                        pulvinar luctus orci sit amet, interdum congue lacus.
+                        Aenean eget blandit arcu. Maecenas non bibendum nibh.
+                        Phasellus facilisis ipsum id ipsum consequat
+                        sollicitudin. Nulla ac faucibus ex.
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut eget ullamcorper mi. Nam enim odio, laoreet in porta
+                        vitae, porttitor in leo. Aenean euismod enim ac semper
+                        vehicula. Mauris aliquet vestibulum lectus, et venenatis
+                        odio molestie in. Quisque sollicitudin ligula vitae quam
+                        porta, ac ornare neque dignissim. Integer massa sem,
+                        pulvinar luctus orci sit amet, interdum congue lacus.
+                        Aenean eget blandit arcu. Maecenas non bibendum nibh.
+                        Phasellus facilisis ipsum id ipsum consequat
+                        sollicitudin. Nulla ac faucibus ex.
+                    </div>
+                </CollapsingBlock>
             </section>
         </div>
     );
