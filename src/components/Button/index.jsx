@@ -28,6 +28,7 @@ const Button = ({
     icon,
     iconAlt,
     tag,
+    htmlFor,
 }) => {
     const computedClassName = useMemo(
         () =>
@@ -52,13 +53,18 @@ const Button = ({
     }
     if (!onClick) {
         return (
-            <Tag role="button" className={computedClassName}>
+            <Tag role="button" className={computedClassName} htmlFor={htmlFor}>
                 {children}
             </Tag>
         );
     }
     return (
-        <Tag className={computedClassName} type={type} onClick={onClick}>
+        <Tag
+            className={computedClassName}
+            type={type}
+            onClick={onClick}
+            htmlFor={htmlFor}
+        >
             {icon && (
                 <img
                     src={icon}

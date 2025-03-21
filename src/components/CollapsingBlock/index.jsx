@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import Button from '@components/Button';
 import './collapsing-block.scss';
 
 const CollapsingBlock = ({ children, btnProp }) => {
+    const id = useMemo(() => Math.random().toString(36), []);
     const computedProps = {
         ...btnProp,
-        className: `collapsing-block__summary ${btnProp.className || ''}`,
+        htmlFor: id,
+        className: `collapsing-block__btn ${btnProp.className || ''}`,
     };
     return (
-        <details className="collapsing-block">
-            <Button tag="summary" {...computedProps} />
-            {children}
-        </details>
+        <div className="collapsing-block">
+            <input
+                id={id}
+                type="checkbox"
+                className="collapsing-block__hidden-checkbox"
+            />
+            <Button tag="label" {...computedProps} />
+            <div className="collapsing-block__content">{children}</div>
+        </div>
     );
 };
 
-export default CollapsingBlock;
+export default React.memo(CollapsingBlock);
