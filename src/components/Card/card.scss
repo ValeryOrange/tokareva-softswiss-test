@@ -1,3 +1,5 @@
+$minHeight: 350px;
+
 .card {
     container-type: inline-size;
     display: flex;
@@ -5,11 +7,11 @@
     justify-content: flex-end;
     align-items: flex-start;
     width: 100%;
-    min-height: 350px;
+    min-height: $minHeight;
     padding: 2.4rem;
     border-radius: 1rem;
     background-size: cover;
-    background-position: center;
+    background-position: center, calc(var(--initial-height) / 2);
     background-repeat: no-repeat;
 
     &__title {
@@ -22,6 +24,10 @@
         margin-bottom: 2.4rem;
         font-size: clamp(1.6rem, 4cqi, 2.6rem);
         font-weight: $font-weight-super;
+    }
+
+    &__btn {
+        align-self: flex-start;
     }
 }
 

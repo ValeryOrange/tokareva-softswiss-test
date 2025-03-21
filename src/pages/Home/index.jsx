@@ -3,6 +3,7 @@ import Lead from '@components/Lead';
 import Title from '@components/Title';
 import Cards from '@components/Cards';
 import Button from '@components/Button';
+import CollapsingBlock from '@components/CollapsingBlock';
 import { cardsData } from './data';
 import './home.scss';
 
@@ -19,7 +20,7 @@ import './home.scss';
 const Home = () => {
     return (
         <div className="home">
-            <Lead className="home__lead" more={<More />}>
+            <Lead className="home__lead">
                 <LeadContent />
             </Lead>
             <Cards title="Offer" cards={cardsData} />
@@ -45,8 +46,6 @@ const Home = () => {
     );
 };
 
-const More = () => <div>This is a more text without a background image</div>;
-
 const LeadContent = () => (
     <>
         <Title>
@@ -56,6 +55,24 @@ const LeadContent = () => (
             Where the possibilities are{' '}
             <em className="em em_yellow">endless!</em>
         </Title>
+        <CollapsingBlock
+            btnProp={{
+                className: 'lead__button',
+                variant: 'contained',
+            }}
+        >
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget
+                ullamcorper mi. Nam enim odio, laoreet in porta vitae, porttitor
+                in leo. Aenean euismod enim ac semper vehicula. Mauris aliquet
+                vestibulum lectus, et venenatis odio molestie in. Quisque
+                sollicitudin ligula vitae quam porta, ac ornare neque dignissim.
+                Integer massa sem, pulvinar luctus orci sit amet, interdum
+                congue lacus. Aenean eget blandit arcu. Maecenas non bibendum
+                nibh. Phasellus facilisis ipsum id ipsum consequat sollicitudin.
+                Nulla ac faucibus ex.
+            </div>
+        </CollapsingBlock>
     </>
 );
 

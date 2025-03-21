@@ -16,17 +16,17 @@ import './nav-bar.scss';
  */
 const NavBar = () => {
     const [navBarOpen, setNavBarOpen] = useState(false);
-    const toggleNavBar = () => {
+    function toggleNavBar() {
         setNavBarOpen((prev) => {
             const newState = !prev;
             document.body.style.overflow = newState ? 'hidden' : 'auto';
             return newState;
         });
-    };
-    const closeNavBar = () => {
+    }
+    function closeNavBar() {
         setNavBarOpen(false);
         document.body.style.overflow = 'auto';
-    };
+    }
 
     const btnIcon = navBarOpen ? close : burger;
     const iconAlt = navBarOpen ? 'Close Menu' : 'Open Menu';

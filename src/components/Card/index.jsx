@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import Button from '@components/Button';
+import CollapsingBlock from '@components/CollapsingBlock';
 import './card.scss';
 
 /**
@@ -24,7 +24,15 @@ const Card = ({ title, caption, image, text }) => {
         <div className="card" style={inlineStyle}>
             <div className="card__title">{title}</div>
             <div className="card__caption">{caption}</div>
-            {text && <Button className="card__btn">Learn more</Button>}
+            {text && (
+                <CollapsingBlock
+                    btnProp={{
+                        className: 'card__btn',
+                    }}
+                >
+                    {text}
+                </CollapsingBlock>
+            )}
         </div>
     );
 };

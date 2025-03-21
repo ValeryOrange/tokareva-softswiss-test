@@ -21,12 +21,14 @@ import './button.scss';
 const Button = ({
     href,
     children,
+    content,
     type = 'button',
     onClick,
     variant = 'outlined',
     className,
     icon,
     iconAlt,
+    tag,
 }) => {
     const computedClassName = useMemo(
         () =>
@@ -38,22 +40,27 @@ const Button = ({
             ),
         [variant, href, className]
     );
+    const displayedContent = content || children;
     if (href) {
         return (
             <NavLink className={computedClassName} to={href}>
-                {children}
+                {displayedContent}
             </NavLink>
         );
     }
+    let Tag = tag || 'button';
+    if (!onClick && Tag === 'button') {
+        Tag = 'div';
+    }
     if (!onClick) {
         return (
-            <div role="button" className={computedClassName}>
-                {children}
-            </div>
+            <Tag role="button" className={computedClassName}>
+                {displayedContent}
+            </Tag>
         );
     }
     return (
-        <button className={computedClassName} type={type} onClick={onClick}>
+        <Tag className={computedClassName} type={type} onClick={onClick}>
             {icon && (
                 <img
                     src={icon}
@@ -61,8 +68,8 @@ const Button = ({
                     className="button__image"
                 />
             )}
-            {children}
-        </button>
+            {displayedContent}
+        </Tag>
     );
 };
 

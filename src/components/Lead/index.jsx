@@ -1,6 +1,5 @@
 import React, { useMemo } from 'react';
 import clsx from 'clsx';
-import Button from '@components/Button';
 import './lead.scss';
 
 /**
@@ -13,21 +12,12 @@ import './lead.scss';
  *
  * @returns {JSX.Element} The rendered Lead component.
  */
-const Lead = ({ className, children, more }) => {
+const Lead = ({ className, children }) => {
     const computedClassName = useMemo(
         () => clsx('lead', className),
         [className]
     );
-    return (
-        <div className={computedClassName}>
-            {children}
-            {more && (
-                <Button className="lead__button" variant="contained">
-                    Learn more
-                </Button>
-            )}
-        </div>
-    );
+    return <div className={computedClassName}>{children}</div>;
 };
 
 export default React.memo(Lead);
