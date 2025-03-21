@@ -72,6 +72,17 @@ const LeadContent = () => (
                 nibh. Phasellus facilisis ipsum id ipsum consequat sollicitudin.
                 Nulla ac faucibus ex.
             </div>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget
+                ullamcorper mi. Nam enim odio, laoreet in porta vitae, porttitor
+                in leo. Aenean euismod enim ac semper vehicula. Mauris aliquet
+                vestibulum lectus, et venenatis odio molestie in. Quisque
+                sollicitudin ligula vitae quam porta, ac ornare neque dignissim.
+                Integer massa sem, pulvinar luctus orci sit amet, interdum
+                congue lacus. Aenean eget blandit arcu. Maecenas non bibendum
+                nibh. Phasellus facilisis ipsum id ipsum consequat sollicitudin.
+                Nulla ac faucibus ex.
+            </div>
         </CollapsingBlock>
     </>
 );

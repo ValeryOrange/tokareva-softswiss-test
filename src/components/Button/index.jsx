@@ -21,7 +21,6 @@ import './button.scss';
 const Button = ({
     href,
     children,
-    content,
     type = 'button',
     onClick,
     variant = 'outlined',
@@ -40,11 +39,10 @@ const Button = ({
             ),
         [variant, href, className]
     );
-    const displayedContent = content || children;
     if (href) {
         return (
             <NavLink className={computedClassName} to={href}>
-                {displayedContent}
+                {children}
             </NavLink>
         );
     }
@@ -55,7 +53,7 @@ const Button = ({
     if (!onClick) {
         return (
             <Tag role="button" className={computedClassName}>
-                {displayedContent}
+                {children}
             </Tag>
         );
     }
@@ -68,7 +66,7 @@ const Button = ({
                     className="button__image"
                 />
             )}
-            {displayedContent}
+            {children}
         </Tag>
     );
 };

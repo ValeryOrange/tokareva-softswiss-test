@@ -13,9 +13,11 @@
         }
     }
 
-    &[open] &__summary {
-        &:after {
-            content: 'Show less';
-        }
+    &[open] &__content {
+        max-height: 500px;
+        opacity: 1;
+        transition:
+            max-height 0.3s ease-in,
+            opacity 0.3s ease-in;
     }
 }

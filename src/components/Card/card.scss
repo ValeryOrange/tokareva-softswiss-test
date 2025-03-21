@@ -1,5 +1,3 @@
-$minHeight: 350px;
-
 .card {
     container-type: inline-size;
     display: flex;
@@ -7,11 +5,11 @@ $minHeight: 350px;
     justify-content: flex-end;
     align-items: flex-start;
     width: 100%;
-    min-height: $minHeight;
+    min-height: 350px;
     padding: 2.4rem;
     border-radius: 1rem;
     background-size: cover;
-    background-position: center, calc(var(--initial-height) / 2);
+    background-position: 0 0;
     background-repeat: no-repeat;
 
     &__title {

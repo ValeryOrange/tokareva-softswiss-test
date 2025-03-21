@@ -1,14 +1,15 @@
 .home {
     &__lead {
+        padding-top: 200px;
         justify-content: end;
         background:
             url('./2xearth.png') no-repeat left 15px top -100px,
             linear-gradient($black-transparent, $grey-transparent),
-            url('./4xgalaxy.png') no-repeat center center;
+            url('./4xgalaxy.png') no-repeat 0 0;
         background-size:
             auto 336px,
             100% 100%,
-            cover;
+            auto;
     }
 }
 
@@ -22,11 +23,11 @@
             background-position:
                 right -100px top 25px,
                 0 0,
-                center center;
+                0 0;
             background-size:
                 auto 367px,
                 100% 100%,
-                cover;
+                auto;
         }
     }
 }
@@ -39,11 +40,11 @@
             background-position:
                 right 90px top 60px,
                 0 0,
-                center center;
+                0 0;
             background-size:
                 auto 367px,
                 100% 100%,
-                cover;
+                auto;
         }
     }
 }
