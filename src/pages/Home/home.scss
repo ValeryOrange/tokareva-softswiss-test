@@ -5,7 +5,7 @@
         background:
             url('./2xearth.png') no-repeat left 15px top -100px,
             linear-gradient($black-transparent, $grey-transparent),
-            url('./4xgalaxy.png') no-repeat 0 0;
+            url('./4xgalaxy.png') no-repeat center;
         background-size:
             auto 336px,
             100% 100%,
@@ -27,7 +27,7 @@
             background-position:
                 right -100px top 25px,
                 0 0,
-                0 0;
+                center;
             background-size:
                 auto 367px,
                 100% 100%,
@@ -44,7 +44,7 @@
             background-position:
                 right 90px top 60px,
                 0 0,
-                0 0;
+                center;
             background-size:
                 auto 367px,
                 100% 100%,
