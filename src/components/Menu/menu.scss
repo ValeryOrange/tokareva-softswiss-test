@@ -1,10 +1,10 @@
 .menu {
     &_mobile {
         position: fixed;
-        right: 0;
-        bottom: 0;
+        right: -6rem;
+        top: $header-height-sm;
         width: calc(100vw - 6rem);
-        height: calc(100% - $header-height-sm);
+        height: calc(100vh - $header-height-sm);
         display: flex;
         flex-direction: column;
         padding: 5rem;
@@ -22,6 +22,8 @@
     }
 
     &_open {
+        position: absolute;
+        top: 44px;
         transform: translateX(0);
         opacity: 1;
         pointer-events: auto;
