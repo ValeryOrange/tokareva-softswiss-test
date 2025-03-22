@@ -1,51 +1,53 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Await, useLoaderData } from 'react-router';
-import { Suspense } from 'react';
 import Lead from '@components/Lead';
 import Title from '@components/Title';
 import Cards from '@components/Cards';
 import CollapsingBlock from '@components/CollapsingBlock';
+import Loader from '@components/Loader';
 import './home.scss';
 
 const Home = () => {
     const { homePageData } = useLoaderData();
 
     return (
-        <Suspense fallback={<div>Loading Home Page...</div>}>
-            <Await resolve={homePageData}>
-                {(data) => (
-                    <div className="home">
-                        <Lead className="home__lead">
-                            <LeadContent />
-                        </Lead>
-                        <Cards
-                            title={data.cards.title}
-                            cards={data.cards.items}
-                        />
-                        <section>
-                            <Title size="h3">{data.content.title}</Title>
-                            <p className="paragraph">
-                                {data.content.description}
-                            </p>
-                            {data.content.collapsible.length > 0 && (
-                                <CollapsingBlock
-                                    btnProp={{
-                                        className: 'home__text-button',
-                                        variant: 'text',
-                                    }}
-                                >
-                                    {data.content.collapsible.map(
-                                        (item, index) => (
-                                            <div key={index}>{item}</div>
-                                        )
-                                    )}
-                                </CollapsingBlock>
-                            )}
-                        </section>
-                    </div>
-                )}
-            </Await>
-        </Suspense>
+        <div className="home">
+            <Lead className="home__lead">
+                <LeadContent />
+            </Lead>
+            <Suspense fallback={<Loader />}>
+                <Await resolve={homePageData}>
+                    {(data) => (
+                        <>
+                            <Cards
+                                title={data?.cards?.title}
+                                cards={data?.cards?.items}
+                            />
+                            <section>
+                                <Title size="h3">{data?.content?.title}</Title>
+                                <p className="paragraph">
+                                    {data?.content?.description}
+                                </p>
+                                {!!data?.content?.collapsible?.length && (
+                                    <CollapsingBlock
+                                        btnProp={{
+                                            className: 'home__text-button',
+                                            variant: 'text',
+                                        }}
+                                    >
+                                        {data.content.collapsible.map(
+                                            (item, index) => (
+                                                <div key={index}>{item}</div>
+                                            )
+                                        )}
+                                    </CollapsingBlock>
+                                )}
+                            </section>
+                        </>
+                    )}
+                </Await>
+            </Suspense>
+        </div>
     );
 };
 
