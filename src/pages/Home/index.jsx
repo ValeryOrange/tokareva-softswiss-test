@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { Await, useLoaderData } from 'react-router';
+import { useLoaderData, Await } from 'react-router';
 import Lead from '@components/Lead';
 import Title from '@components/Title';
 import Cards from '@components/Cards';
@@ -7,6 +7,16 @@ import CollapsingBlock from '@components/CollapsingBlock';
 import Loader from '@components/Loader';
 import './home.scss';
 
+/**
+ * Home component that fetches and displays home page data.
+ *
+ * This component uses `useLoaderData` to fetch the home page data and displays it
+ * within various child components. It uses `Suspense` and `Await` to handle asynchronous
+ * data fetching and rendering.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered Home component.
+ */
 const Home = () => {
     const { homePageData } = useLoaderData();
 

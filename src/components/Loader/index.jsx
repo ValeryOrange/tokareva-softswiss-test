@@ -2,6 +2,15 @@ import React from 'react';
 import { PINK } from '@/consts';
 import './loader.scss';
 
+/**
+ * Loader component renders a spinning loader animation using SVG.
+ *
+ * @component
+ * @example
+ * return (
+ *   <Loader />
+ * )
+ */
 function Loader() {
     return (
         <div className="loader">
