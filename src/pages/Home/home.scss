@@ -4,16 +4,16 @@
         justify-content: end;
         background:
             image-set(
-                    url('./1xearth-compressed.png') 1x,
-                    url('./2xearth-compressed.png') 2x,
-                    url('./4xearth-compressed.png') 4x
+                    url('./1xearth.png') 1x,
+                    url('./2xearth.png') 2x,
+                    url('./4xearth.png') 4x
                 )
                 no-repeat left 15px top -100px,
             linear-gradient($black-transparent, $grey-transparent),
             image-set(
-                    url('./1xgalaxy-compressed.png') 1x,
-                    url('./2xgalaxy-compressed.png') 2x,
-                    url('./4xgalaxy-compressed.png') 4x
+                    url('./1xgalaxy.png') 1x,
+                    url('./2xgalaxy.png') 2x,
+                    url('./4xgalaxy.png') 4x
                 )
                 no-repeat center;
         background-size:
