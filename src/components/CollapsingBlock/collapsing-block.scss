@@ -19,13 +19,9 @@
         padding: 0;
     }
 
-    &__btn {
-        position: relative;
-    }
-
     &__btn::after,
     &__btn::before {
-        position: absolute;
+        position: relative;
         left: 0;
         top: 0;
         display: flex;

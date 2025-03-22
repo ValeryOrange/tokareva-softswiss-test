@@ -35,6 +35,11 @@
 
     &_text {
         display: inline-block;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
         background: none;
         color: $yellow;
         font-size: inherit;
