@@ -13,7 +13,7 @@ const Loader = () => (
             display="block"
         >
             <rect
-                fill="#fe718d"
+                fill="#ff70d9"
                 height="12"
                 width="6"
                 ry="6"
@@ -31,7 +31,7 @@ const Loader = () => (
                 />
             </rect>
             <rect
-                fill="#fe718d"
+                fill="#ff70d9"
                 height="12"
                 width="6"
                 ry="6"
@@ -50,7 +50,7 @@ const Loader = () => (
                 />
             </rect>
             <rect
-                fill="#fe718d"
+                fill="#ff70d9"
                 height="12"
                 width="6"
                 ry="6"
@@ -69,7 +69,7 @@ const Loader = () => (
                 />
             </rect>
             <rect
-                fill="#fe718d"
+                fill="#ff70d9"
                 height="12"
                 width="6"
                 ry="6"
@@ -88,7 +88,7 @@ const Loader = () => (
                 />
             </rect>
             <rect
-                fill="#fe718d"
+                fill="#ff70d9"
                 height="12"
                 width="6"
                 ry="6"
@@ -107,7 +107,7 @@ const Loader = () => (
                 />
             </rect>
             <rect
-                fill="#fe718d"
+                fill="#ff70d9"
                 height="12"
                 width="6"
                 ry="6"
@@ -126,7 +126,7 @@ const Loader = () => (
                 />
             </rect>
             <rect
-                fill="#fe718d"
+                fill="#ff70d9"
                 height="12"
                 width="6"
                 ry="6"
@@ -145,7 +145,7 @@ const Loader = () => (
                 />
             </rect>
             <rect
-                fill="#fe718d"
+                fill="#ff70d9"
                 height="12"
                 width="6"
                 ry="6"
@@ -164,7 +164,7 @@ const Loader = () => (
                 />
             </rect>
             <rect
-                fill="#fe718d"
+                fill="#ff70d9"
                 height="12"
                 width="6"
                 ry="6"
@@ -183,7 +183,7 @@ const Loader = () => (
                 />
             </rect>
             <rect
-                fill="#fe718d"
+                fill="#ff70d9"
                 height="12"
                 width="6"
                 ry="6"
@@ -202,7 +202,7 @@ const Loader = () => (
                 />
             </rect>
             <rect
-                fill="#fe718d"
+                fill="#ff70d9"
                 height="12"
                 width="6"
                 ry="6"
@@ -221,7 +221,7 @@ const Loader = () => (
                 />
             </rect>
             <rect
-                fill="#fe718d"
+                fill="#ff70d9"
                 height="12"
                 width="6"
                 ry="6"
