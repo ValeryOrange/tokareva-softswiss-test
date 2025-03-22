@@ -43,9 +43,14 @@ const NavBar = () => {
             {/*
              * The Menu component is used twice in the NavBar component
              * to make it look correctly while resizing the document or
-             * turning a mobile device
+             * turning a mobile device.
              * */}
             <Menu variant="mobile" onClick={closeNavBar} isOpen={navBarOpen} />
+            {/*
+             * Since the desktop menu uses id=#gradient for the cart
+             * icon's background, there must be only one desktop menu
+             * component on the page.
+             * */}
             <Menu variant="desktop" />
         </nav>
     );
