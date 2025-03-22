@@ -1,4 +1,5 @@
 import React from 'react';
+import { PINK, YELLOW } from '@/consts';
 
 /**
  * CartIcon component renders an SVG icon representing a shopping cart.
@@ -18,8 +19,8 @@ const CartIcon = ({ variant = 'mobile' }) => (
         {variant === 'desktop' && (
             <defs>
                 <linearGradient id="gradient" x1="0%" y1="0%" x2="0" y2="100%">
-                    <stop offset="0%" stopColor="#ebff00"></stop>
-                    <stop offset="100%" stopColor="#ff70d9"></stop>
+                    <stop offset="0%" stopColor={YELLOW}></stop>
+                    <stop offset="100%" stopColor={PINK}></stop>
                 </linearGradient>
             </defs>
         )}
