@@ -3,8 +3,8 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xblue-nebula.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xblue-nebula.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xblue-nebula-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xblue-nebula-compressed.png`,
             '4x': `${process.env.PUBLIC_URL}/assets/4xblue-nebula.png`,
         },
         title: 'Move the borders of reality',
@@ -14,8 +14,8 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xbrown-nebula.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xbrown-nebula.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xbrown-nebula-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xbrown-nebula-compressed.png`,
             '4x': `${process.env.PUBLIC_URL}/assets/4xbrown-nebula.png`,
         },
         title: 'Space is not just stars and planets',
@@ -25,9 +25,9 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xmilky-way.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xmilky-way.png`,
-            '4x': `${process.env.PUBLIC_URL}/assets/4xmilky-way.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xmilky-way-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xmilky-way-compressed.png`,
+            '4x': `${process.env.PUBLIC_URL}/assets/4xmilky-way-compressed.png`,
         },
         title: 'For those who dream of stars',
         caption: 'Our offer: make your dream come true',
@@ -36,8 +36,8 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xpink-nebula.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xpink-nebula.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xpink-nebula-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xpink-nebula-compressed.png`,
             '4x': `${process.env.PUBLIC_URL}/assets/4xpink-nebula.png`,
         },
         title: 'Fulfill your fantastic dreams',
@@ -47,8 +47,8 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xblue-nebula.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xblue-nebula.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xblue-nebula-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xblue-nebula-compressed.png`,
             '4x': `${process.env.PUBLIC_URL}/assets/4xblue-nebula.png`,
         },
         title: 'Move the borders of reality',
@@ -58,8 +58,8 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xbrown-nebula.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xbrown-nebula.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xbrown-nebula-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xbrown-nebula-compressed.png`,
             '4x': `${process.env.PUBLIC_URL}/assets/4xbrown-nebula.png`,
         },
         title: 'Space is not just stars and planets',
@@ -69,9 +69,9 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xmilky-way.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xmilky-way.png`,
-            '4x': `${process.env.PUBLIC_URL}/assets/4xmilky-way.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xmilky-way-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xmilky-way-compressed.png`,
+            '4x': `${process.env.PUBLIC_URL}/assets/4xmilky-way-compressed.png`,
         },
         title: 'For those who dream of stars',
         caption: 'Our offer: make your dream come true',
@@ -80,8 +80,8 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xpink-nebula.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xpink-nebula.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xpink-nebula-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xpink-nebula-compressed.png`,
             '4x': `${process.env.PUBLIC_URL}/assets/4xpink-nebula.png`,
         },
         title: 'Fulfill your fantastic dreams',
@@ -91,8 +91,8 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xblue-nebula.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xblue-nebula.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xblue-nebula-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xblue-nebula-compressed.png`,
             '4x': `${process.env.PUBLIC_URL}/assets/4xblue-nebula.png`,
         },
         title: 'Move the borders of reality',
@@ -102,8 +102,8 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xbrown-nebula.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xbrown-nebula.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xbrown-nebula-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xbrown-nebula-compressed.png`,
             '4x': `${process.env.PUBLIC_URL}/assets/4xbrown-nebula.png`,
         },
         title: 'Space is not just stars and planets',
@@ -113,8 +113,8 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xblue-nebula.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xblue-nebula.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xblue-nebula-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xblue-nebula-compressed.png`,
             '4x': `${process.env.PUBLIC_URL}/assets/4xblue-nebula.png`,
         },
         title: 'Move the borders of reality',
@@ -124,8 +124,8 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xbrown-nebula.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xbrown-nebula.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xbrown-nebula-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xbrown-nebula-compressed.png`,
             '4x': `${process.env.PUBLIC_URL}/assets/4xbrown-nebula.png`,
         },
         title: 'Space is not just stars and planets',
@@ -135,9 +135,9 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xmilky-way.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xmilky-way.png`,
-            '4x': `${process.env.PUBLIC_URL}/assets/4xmilky-way.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xmilky-way-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xmilky-way-compressed.png`,
+            '4x': `${process.env.PUBLIC_URL}/assets/4xmilky-way-compressed.png`,
         },
         title: 'For those who dream of stars',
         caption: 'Our offer: make your dream come true',
@@ -146,8 +146,8 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xpink-nebula.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xpink-nebula.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xpink-nebula-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xpink-nebula-compressed.png`,
             '4x': `${process.env.PUBLIC_URL}/assets/4xpink-nebula.png`,
         },
         title: 'Fulfill your fantastic dreams',
@@ -157,8 +157,8 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xblue-nebula.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xblue-nebula.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xblue-nebula-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xblue-nebula-compressed.png`,
             '4x': `${process.env.PUBLIC_URL}/assets/4xblue-nebula.png`,
         },
         title: 'Move the borders of reality',
@@ -168,8 +168,8 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xbrown-nebula.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xbrown-nebula.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xbrown-nebula-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xbrown-nebula-compressed.png`,
             '4x': `${process.env.PUBLIC_URL}/assets/4xbrown-nebula.png`,
         },
         title: 'Space is not just stars and planets',
@@ -179,9 +179,9 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xmilky-way.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xmilky-way.png`,
-            '4x': `${process.env.PUBLIC_URL}/assets/4xmilky-way.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xmilky-way-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xmilky-way-compressed.png`,
+            '4x': `${process.env.PUBLIC_URL}/assets/4xmilky-way-compressed.png`,
         },
         title: 'For those who dream of stars',
         caption: 'Our offer: make your dream come true',
@@ -190,8 +190,8 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xpink-nebula.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xpink-nebula.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xpink-nebula-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xpink-nebula-compressed.png`,
             '4x': `${process.env.PUBLIC_URL}/assets/4xpink-nebula.png`,
         },
         title: 'Fulfill your fantastic dreams',
@@ -201,8 +201,8 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xblue-nebula.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xblue-nebula.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xblue-nebula-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xblue-nebula-compressed.png`,
             '4x': `${process.env.PUBLIC_URL}/assets/4xblue-nebula.png`,
         },
         title: 'Move the borders of reality',
@@ -212,8 +212,8 @@ export const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
-            '1x': `${process.env.PUBLIC_URL}/assets/1xbrown-nebula.png`,
-            '2x': `${process.env.PUBLIC_URL}/assets/2xbrown-nebula.png`,
+            '1x': `${process.env.PUBLIC_URL}/assets/1xbrown-nebula-compressed.png`,
+            '2x': `${process.env.PUBLIC_URL}/assets/2xbrown-nebula-compressed.png`,
             '4x': `${process.env.PUBLIC_URL}/assets/4xbrown-nebula.png`,
         },
         title: 'Space is not just stars and planets',
