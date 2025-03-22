@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router';
 import clsx from 'clsx';
 import './button.scss';
 
@@ -7,7 +7,7 @@ import './button.scss';
  * Button component that can render as a link, div, or button element based on the provided props.
  *
  * @param {Object} props - The props object.
- * @param {string} [props.href] - The URL to link to. If provided, the component renders as a NavLink from 'react-router-dom'.
+ * @param {string} [props.href] - The URL to link to. If provided, the component renders as a NavLink from 'react-router'.
  * @param {string} props.children - The content to be displayed inside the button, text node.
  * @param {'button' | 'submit' | 'reset'} [props.type='button'] - The type of the button element. Defaults to 'button'.
  * @param {function} [props.onClick] - The optional click event handler. Ignored if `href` is provided. If not provided and `href` or `htmlFor` are not provided, the component renders as a div.

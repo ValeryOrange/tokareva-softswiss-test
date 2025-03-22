@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from '@components/Title';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router';
 
 /**
  * Cart component renders a page with items in user's cart.

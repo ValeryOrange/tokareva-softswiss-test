@@ -1,6 +1,13 @@
 import React from 'react';
-import { HashRouter } from 'react-router-dom';
+import {
+    RouterProvider,
+    createBrowserRouter,
+    createHashRouter,
+} from 'react-router';
 import Routing from './routes';
+
+const isDev = process.env.NODE_ENV === 'development';
+const createRouter = isDev ? createBrowserRouter : createHashRouter;
 
 /**
  * App component that sets up the HashRouter for the application.
@@ -8,10 +15,6 @@ import Routing from './routes';
  * @component
  * @returns {JSX.Element} The rendered component.
  */
-const App = () => (
-    <HashRouter>
-        <Routing />
-    </HashRouter>
-);
+const App = () => <RouterProvider router={createRouter(Routing)} />;
 
 export default App;

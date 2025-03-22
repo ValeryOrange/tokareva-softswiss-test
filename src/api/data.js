@@ -1,5 +1,5 @@
 // mock server data for main page
-export const cardsData = [
+const cardsData = [
     {
         id: `${Math.random() * Math.random()}`,
         images: {
@@ -221,3 +221,54 @@ export const cardsData = [
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget ullamcorper mi. Nam enim odio, laoreet in porta vitae, porttitor in leo. Aenean euismod enim ac semper vehicula. Mauris aliquet vestibulum lectus, et venenatis odio molestie in. Quisque sollicitudin ligula vitae quam porta, ac ornare neque dignissim. Integer massa sem, pulvinar luctus orci sit amet, interdum congue lacus. Aenean eget blandit arcu. Maecenas non bibendum nibh. Phasellus facilisis ipsum id ipsum consequat sollicitudin. Nulla ac faucibus ex.',
     },
 ];
+
+const cardsTitle = 'Offer';
+
+const cards = {
+    title: cardsTitle,
+    items: cardsData,
+};
+
+const content = {
+    title: 'Embark on a space journey',
+    description: `
+        Travelling into space is one of the most exciting and
+        unforgettable adventures that can change your life forever.
+        And if you have ever dreamed of exploring stars, planets and
+        galaxies, then our company is ready to help you realize this
+        dream. We offer a unique experience that will allow you to
+        go on a space journey and see all the secrets of the
+        universe. We guarantee that every moment in space will be
+        filled with incredible impressions, excitement and new
+        discoveries. Our team of professionals takes care of your
+        safety and comfort so that you can fully enjoy your
+        adventure in space. We offer various options for space
+        excursions.`,
+    collapsible: [
+        `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Ut eget ullamcorper mi. Nam enim odio, laoreet in porta
+        vitae, porttitor in leo. Aenean euismod enim ac semper
+        vehicula. Mauris aliquet vestibulum lectus, et venenatis
+        odio molestie in. Quisque sollicitudin ligula vitae quam
+        porta, ac ornare neque dignissim. Integer massa sem,
+        pulvinar luctus orci sit amet, interdum congue lacus.
+        Aenean eget blandit arcu. Maecenas non bibendum nibh.
+        Phasellus facilisis ipsum id ipsum consequat
+        sollicitudin. Nulla ac faucibus ex.`,
+        `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Ut eget ullamcorper mi. Nam enim odio, laoreet in porta
+        vitae, porttitor in leo. Aenean euismod enim ac semper
+        vehicula. Mauris aliquet vestibulum lectus, et venenatis
+        odio molestie in. Quisque sollicitudin ligula vitae quam
+        porta, ac ornare neque dignissim. Integer massa sem,
+        pulvinar luctus orci sit amet, interdum congue lacus.
+        Aenean eget blandit arcu. Maecenas non bibendum nibh.
+        Phasellus facilisis ipsum id ipsum consequat
+        sollicitudin. Nulla ac faucibus ex.`,
+    ],
+};
+
+export const homePageData = {
+    cards,
+    content,
+};
