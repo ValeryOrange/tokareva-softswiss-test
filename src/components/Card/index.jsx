@@ -13,12 +13,12 @@ import './card.scss';
  *
  * @returns {JSX.Element} The rendered Card component.
  */
-const Card = ({ title, caption, image, text }) => {
+const Card = ({ title, caption, images, text }) => {
     const inlineStyle = useMemo(
         () => ({
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(15, 20, 32, 0.79)), url(${image})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(15, 20, 32, 0.79)), image-set(url(${images['1x']}) 1x, url(${images['2x']}) 2x, url(${images['4x']}) 4x)`,
         }),
-        [image]
+        [images]
     );
     return (
         <div className="card" style={inlineStyle}>
