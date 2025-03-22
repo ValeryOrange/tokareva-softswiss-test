@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This project uses `HashRouter` from `react-router-dom` for routing.
 
 ## Browser Support
-The project utilizes **Container Queries** and the `clamp()` function for responsive design.
+The project utilizes **Container Queries**, the `clamp()` function for responsive design and `image-set()` function for background images.
 As a result, **Internet Explorer 11 and older versions are not supported**.
 
 npm@10.5.0
@@ -28,4 +28,4 @@ Creates production build
 
 ### `npm run deploy`
 
-Deploys this application to GitHub Pages and available on [https://valeryorange.github.io/tokareva-softswiss-test/#/](http://ValeryOrange.github.io/tokareva-softswiss-test). Before the command you need to add key "homepage": "https://valeryorange.github.io/tokareva-softswiss-test" so GitHub Pages knows where to deploy it. It is not set permanently because it changes routing in dev build.
+Deploys this application to GitHub Pages and available on [https://valeryorange.github.io/tokareva-softswiss-test/#/](http://ValeryOrange.github.io/tokareva-softswiss-test). Before the command you need to add field "homepage": "https://valeryorange.github.io/tokareva-softswiss-test" to package.json so GitHub Pages knows where to deploy it. It is not set permanently because it changes routing in dev build.
