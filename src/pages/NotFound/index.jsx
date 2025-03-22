@@ -3,7 +3,7 @@ import Title from '@components/Title';
 import './not-found.scss';
 
 /**
- * NotFound component renders a message indicating that the requested page does not exist.
+ * NotFound component renders a page indicating that the requested page does not exist.
  *
  * @component
  * @example

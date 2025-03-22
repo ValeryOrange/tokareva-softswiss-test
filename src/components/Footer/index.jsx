@@ -14,26 +14,26 @@ import './footer.scss';
  *
  * @returns {JSX.Element} The rendered footer component.
  */
-const Footer = () => {
-    return (
-        <footer className="footer">
-            <img
-                src={rocket}
-                alt="Rocket flying through space"
-                className="footer__img"
-                width="130"
-                height="148"
-                loading="lazy"
-            />
-            <NavLink
-                className="link footer__link"
-                to="/about"
-                title="Learn more about our exciting space adventure"
-            >
-                <em className="em em_yellow">Exciting space adventure!</em>
-            </NavLink>
-        </footer>
-    );
-};
+const Footer = () => (
+    <footer className="footer">
+        <img
+            src={rocket}
+            alt="Rocket flying through space"
+            className="footer__img"
+            width="130"
+            height="148"
+            loading="lazy"
+        />
+        <NavLink
+            className="link footer__link"
+            to="/about"
+            title="Learn more about our exciting space adventure"
+        >
+            <em className="highlight highlight_yellow">
+                Exciting space adventure!
+            </em>
+        </NavLink>
+    </footer>
+);
 
 export default Footer;

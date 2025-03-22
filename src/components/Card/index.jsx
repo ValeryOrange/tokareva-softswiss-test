@@ -8,7 +8,10 @@ import './card.scss';
  * @param {Object} props - The properties object.
  * @param {string} props.title - The title of the card.
  * @param {string} props.caption - The caption of the card.
- * @param {string} props.image - The URL of the background image.
+ * @param {Object} props.images - The images object containing URLs for different resolutions.
+ * @param {string} props.images.1x - The URL of the image at 1x resolution.
+ * @param {string} props.images.2x - The URL of the image at 2x resolution.
+ * @param {string} props.images.4x - The URL of the image at 4x resolution.
  * @param {string} [props.text] - Optional collapsed text.
  *
  * @returns {JSX.Element} The rendered Card component.
@@ -37,4 +40,16 @@ const Card = ({ title, caption, images, text }) => {
     );
 };
 
-export default React.memo(Card);
+const areEqual = (prevProps, nextProps) =>
+    prevProps.title === nextProps.title &&
+    prevProps.caption === nextProps.caption &&
+    prevProps.images['1x'] === nextProps.images['1x'] &&
+    prevProps.images['2x'] === nextProps.images['2x'] &&
+    prevProps.images['4x'] === nextProps.images['4x'] &&
+    prevProps.text === nextProps.text;
+
+/**
+ * Memoize the component to make it universal even though it is not
+ * necessary in the current home page.
+ */
+export default React.memo(Card, areEqual);

@@ -11,7 +11,7 @@
     background: linear-gradient($black-transparent, $grey-transparent);
 }
 
-// The @include respond(md) mixin applies styles for large screens
+// The @include respond(md) mixin applies styles for medium screens
 @include respond(md) {
     .lead {
         align-items: flex-start;

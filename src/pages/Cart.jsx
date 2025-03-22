@@ -17,9 +17,10 @@ const Cart = () => (
         <Title size="h2">
             Cart is empty. Explore our{' '}
             <NavLink className="link" to="/products" title="Products">
-                <em className="em em_yellow">Products</em>
+                <em className="highlight highlight_yellow">Products</em>
             </NavLink>{' '}
-            to choose your <em className="em em_pink">new adventures</em>.
+            to choose your{' '}
+            <em className="highlight highlight_pink">new adventures</em>.
         </Title>
     </div>
 );

@@ -8,7 +8,7 @@
     font-weight: $font-weight-bold;
     line-height: 1.2;
 
-    // The @include respond(md) mixin applies styles for large screens
+    // The @include respond(md) mixin applies styles for medium screens
     @include respond(md) {
         font-size: 1.6rem;
     }
@@ -19,7 +19,7 @@
     }
 }
 
-.em {
+.highlight {
     &_yellow {
         color: $yellow;
     }
@@ -31,12 +31,12 @@
 
 // links
 .link {
-    & .em.em_yellow,
-    &:visite .em.em_yellow {
+    & .highlight.highlight_yellow,
+    &:visited .highlight.highlight_yellow {
         color: $yellow;
     }
 
-    &:hover .em.em_yellow {
+    &:hover .highlight.highlight_yellow {
         color: $yellow-transparent;
     }
 }
@@ -46,7 +46,7 @@ section {
     padding-top: 5rem;
     font-size: 1.4rem;
 
-    // The @include respond(md) mixin applies styles for large screens
+    // The @include respond(md) mixin applies styles for medium screens
     @include respond(md) {
         font-size: 1.6rem;
     }

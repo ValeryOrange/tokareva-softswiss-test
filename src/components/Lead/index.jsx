@@ -8,7 +8,6 @@ import './lead.scss';
  * @param {Object} props - The properties object.
  * @param {string} props.className - Additional class names to apply to the div.
  * @param {React.ReactNode} props.children - The content to be displayed inside the div.
- * @param {text} props.more - Optional collapsed text.
  *
  * @returns {JSX.Element} The rendered Lead component.
  */
@@ -20,4 +19,4 @@ const Lead = ({ className, children }) => {
     return <div className={computedClassName}>{children}</div>;
 };
 
-export default React.memo(Lead);
+export default Lead;

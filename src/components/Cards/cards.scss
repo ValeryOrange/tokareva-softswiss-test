@@ -12,7 +12,7 @@
     }
 }
 
-// The @include respond(md) mixin applies styles for large screens
+// The @include respond(md) mixin applies styles for medium screens
 @include respond(md) {
     .cards {
         padding-top: 5.5rem;
@@ -30,6 +30,7 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
+        // This selector spans every third item across two columns
         &__item:nth-child(3n + 1) {
             grid-column: span 2;
         }

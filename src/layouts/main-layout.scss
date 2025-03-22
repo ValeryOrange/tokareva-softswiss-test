@@ -10,7 +10,7 @@
     }
 }
 
-// The @include respond(md) mixin applies styles for large screens
+// The @include respond(md) mixin applies styles for medium screens
 @include respond(md) {
     .main-layout {
         &__content {

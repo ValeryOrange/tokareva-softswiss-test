@@ -7,18 +7,16 @@ import Cart from '@/pages/Cart';
 import Products from '@/pages/Products';
 import NotFound from '@/pages/NotFound';
 
-const Routing = () => {
-    return (
-        <Routes>
-            <Route path="/" element={<MainLayout />}>
-                <Route index element={<Home />} />
-                <Route path="about" element={<About />} />
-                <Route path="cart" element={<Cart />} />
-                <Route path="products" element={<Products />} />
-                <Route path="*" element={<NotFound />} />
-            </Route>
-        </Routes>
-    );
-};
+const Routing = () => (
+    <Routes>
+        <Route path="/" element={<MainLayout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="cart" element={<Cart />} />
+            <Route path="products" element={<Products />} />
+            <Route path="*" element={<NotFound />} />
+        </Route>
+    </Routes>
+);
 
 export default Routing;

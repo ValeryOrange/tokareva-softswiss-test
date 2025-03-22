@@ -15,15 +15,13 @@ import './header.scss';
  *   <Header />
  * )
  */
-const Header = () => {
-    return (
-        <header className="header">
-            <NavLink to="/" title="Home">
-                <Logo className="header__logo" />
-            </NavLink>
-            <NavBar />
-        </header>
-    );
-};
+const Header = () => (
+    <header className="header">
+        <NavLink to="/" title="Home">
+            <Logo className="header__logo" />
+        </NavLink>
+        <NavBar />
+    </header>
+);
 
 export default Header;

@@ -1,7 +1,7 @@
 .home {
     &__lead {
         padding-top: 200px;
-        justify-content: end;
+        justify-content: flex-end;
         background:
             image-set(
                     url('./1xearth.png') 1x,
@@ -27,7 +27,7 @@
     }
 }
 
-// The @include respond(md) mixin applies styles for large screens
+// The @include respond(md) mixin applies styles for medium screens
 @include respond(md) {
     .home {
         &__lead {

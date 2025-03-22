@@ -78,11 +78,12 @@ const Home = () => {
 const LeadContent = () => (
     <>
         <Title>
-            Discover the vast expanses of <em className="em em_pink">space</em>
+            Discover the vast expanses of{' '}
+            <em className="highlight highlight_pink">space</em>
         </Title>
         <Title size="h2">
             Where the possibilities are{' '}
-            <em className="em em_yellow">endless!</em>
+            <em className="highlight highlight_yellow">endless!</em>
         </Title>
         <CollapsingBlock
             btnProp={{

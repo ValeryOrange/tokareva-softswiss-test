@@ -47,9 +47,7 @@ const NavBar = () => {
              * */}
             <Menu variant="mobile" onClick={closeNavBar} isOpen={navBarOpen} />
             {/*
-             * Since the desktop menu uses id=#gradient for the cart
-             * icon's background, there must be only one desktop menu
-             * component on the page.
+             * Ensure only one desktop menu component for unique cart icon background.
              * */}
             <Menu variant="desktop" />
         </nav>
