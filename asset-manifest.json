@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tokareva-softswiss-test/static/css/main.26dc9e07.css",
+    "main.css": "/tokareva-softswiss-test/static/css/main.4211d601.css",
     "main.js": "/tokareva-softswiss-test/static/js/main.f45dd89e.js",
     "static/css/138.198d900b.chunk.css": "/tokareva-softswiss-test/static/css/138.198d900b.chunk.css",
     "static/js/138.cd02ba6f.chunk.js": "/tokareva-softswiss-test/static/js/138.cd02ba6f.chunk.js",
@@ -14,13 +14,13 @@
     "index.html": "/tokareva-softswiss-test/index.html",
     "static/media/burger.svg": "/tokareva-softswiss-test/static/media/burger.c25f109051cf84ff109c59164c1a92f6.svg",
     "static/media/close.svg": "/tokareva-softswiss-test/static/media/close.e9bd3fa45b4500147b330f215cd8ed98.svg",
-    "main.26dc9e07.css.map": "/tokareva-softswiss-test/static/css/main.26dc9e07.css.map",
+    "main.4211d601.css.map": "/tokareva-softswiss-test/static/css/main.4211d601.css.map",
     "main.f45dd89e.js.map": "/tokareva-softswiss-test/static/js/main.f45dd89e.js.map",
     "138.198d900b.chunk.css.map": "/tokareva-softswiss-test/static/css/138.198d900b.chunk.css.map",
     "138.cd02ba6f.chunk.js.map": "/tokareva-softswiss-test/static/js/138.cd02ba6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26dc9e07.css",
+    "static/css/main.4211d601.css",
     "static/js/main.f45dd89e.js"
   ]
 }
