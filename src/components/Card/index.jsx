@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import CollapsingBlock from '@components/CollapsingBlock';
 import './card.scss';
 
@@ -17,12 +17,9 @@ import './card.scss';
  * @returns {JSX.Element} The rendered Card component.
  */
 const Card = ({ title, caption, images, text }) => {
-    const inlineStyle = useMemo(
-        () => ({
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(15, 20, 32, 0.79)), image-set(url(${images['1x']}) 1x, url(${images['2x']}) 2x, url(${images['4x']}) 4x)`,
-        }),
-        [images]
-    );
+    const inlineStyle = {
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(15, 20, 32, 0.79)), image-set(url(${images['1x']}) 1x, url(${images['2x']}) 2x, url(${images['4x']}) 4x)`,
+    };
     return (
         <div className="card" style={inlineStyle}>
             <div className="card__title">{title}</div>
@@ -40,16 +37,8 @@ const Card = ({ title, caption, images, text }) => {
     );
 };
 
-const areEqual = (prevProps, nextProps) =>
-    prevProps.title === nextProps.title &&
-    prevProps.caption === nextProps.caption &&
-    prevProps.images['1x'] === nextProps.images['1x'] &&
-    prevProps.images['2x'] === nextProps.images['2x'] &&
-    prevProps.images['4x'] === nextProps.images['4x'] &&
-    prevProps.text === nextProps.text;
-
 /**
  * Memoize the component to make it universal even though it is not
  * necessary in the current home page.
  */
-export default React.memo(Card, areEqual);
+export default React.memo(Card);

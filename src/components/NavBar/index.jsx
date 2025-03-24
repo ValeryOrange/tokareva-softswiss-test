@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import Button from '@components/Button';
 import Menu from '@components/Menu';
 import burger from './burger.svg';
@@ -16,17 +16,18 @@ import './nav-bar.scss';
  */
 const NavBar = () => {
     const [navBarOpen, setNavBarOpen] = useState(false);
-    function toggleNavBar() {
+    const toggleNavBar = useCallback(() => {
         setNavBarOpen((prev) => {
             const newState = !prev;
             document.body.style.overflow = newState ? 'hidden' : 'auto';
             return newState;
         });
-    }
-    function closeNavBar() {
+    }, []);
+
+    const closeNavBar = useCallback(() => {
         setNavBarOpen(false);
         document.body.style.overflow = 'auto';
-    }
+    }, []);
 
     const btnIcon = navBarOpen ? close : burger;
     const iconAlt = navBarOpen ? 'Close Menu' : 'Open Menu';

@@ -19,4 +19,4 @@ const Lead = ({ className, children }) => {
     return <div className={computedClassName}>{children}</div>;
 };
 
-export default Lead;
+export default React.memo(Lead);

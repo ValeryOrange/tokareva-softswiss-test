@@ -34,4 +34,8 @@ const CollapsingBlock = ({ children, btnProp }) => {
     );
 };
 
+/**
+ * Memoize the component to make it universal even though it is not
+ * necessary in the current home page.
+ */
 export default React.memo(CollapsingBlock);
