@@ -46,8 +46,8 @@ const Home = () => {
                                         }}
                                     >
                                         {data.content.collapsible.map(
-                                            (item, index) => (
-                                                <div key={index}>{item}</div>
+                                            ({ id, text }) => (
+                                                <div key={id}>{text}</div>
                                             )
                                         )}
                                     </CollapsingBlock>
