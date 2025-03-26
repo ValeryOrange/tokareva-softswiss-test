@@ -1,65 +1,96 @@
-import React, { Suspense } from 'react';
-import { useLoaderData, Await } from 'react-router';
+import React, { useState, useEffect, useRef } from 'react';
 import Lead from '@components/Lead';
 import Title from '@components/Title';
 import Cards from '@components/Cards';
 import CollapsingBlock from '@components/CollapsingBlock';
 import Loader from '@components/Loader';
+import fakeRequestHomePageData from '@/api/home';
 import './home.scss';
 
 /**
  * Home component that fetches and displays home page data.
  *
- * This component uses `useLoaderData` to fetch the home page data and displays it
- * within various child components. It uses `Suspense` and `Await` to handle asynchronous
- * data fetching and rendering.
- *
  * @component
  * @returns {JSX.Element} The rendered Home component.
  */
 const Home = () => {
-    const { homePageData } = useLoaderData();
+    const [data, setData] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
+    const isMounted = useRef(true);
+
+    useEffect(() => {
+        const controller = new AbortController();
+        const signal = controller.signal;
+        // a flag to handle race condition
+        let isCurrentMounted = isMounted.current;
+
+        fakeRequestHomePageData({ signal })
+            .then((response) => {
+                if (isCurrentMounted) {
+                    setData(response);
+                }
+            })
+            .catch((error) => {
+                console.warn(error);
+            })
+            .finally(() => {
+                if (isCurrentMounted) {
+                    setIsLoading(false);
+                }
+            });
+
+        return () => {
+            isCurrentMounted = false;
+            controller.abort();
+        };
+    }, []);
 
     return (
         <div className="home">
             <Lead className="home__lead">
                 <LeadContent />
             </Lead>
-            <Suspense fallback={<Loader />}>
-                <Await resolve={homePageData}>
-                    {(data) => (
-                        <>
-                            <Cards
-                                title={data?.cards?.title}
-                                cards={data?.cards?.items}
-                            />
-                            <section>
-                                <Title size="h3">{data?.content?.title}</Title>
-                                <p className="paragraph">
-                                    {data?.content?.description}
-                                </p>
-                                {!!data?.content?.collapsible?.length && (
-                                    <CollapsingBlock
-                                        btnProp={{
-                                            className: 'home__text-button',
-                                            variant: 'text',
-                                        }}
-                                    >
-                                        {data.content.collapsible.map(
-                                            ({ id, text }) => (
-                                                <div key={id}>{text}</div>
-                                            )
-                                        )}
-                                    </CollapsingBlock>
-                                )}
-                            </section>
-                        </>
-                    )}
-                </Await>
-            </Suspense>
+            <PageContent isLoading={isLoading} data={data} />
         </div>
     );
 };
+
+const PageContent = React.memo(({ isLoading, data }) => {
+    if (isLoading) return <Loader />;
+    if (!data) return null;
+    return (
+        <>
+            {data.cards?.title && data.cards?.items && (
+                <Cards title={data.cards.title} cards={data.cards.items} />
+            )}
+            {data.content && (
+                <section>
+                    {data.content.title && (
+                        <Title size="h3">{data?.content?.title}</Title>
+                    )}
+                    {data.content.description && (
+                        <p className="paragraph">
+                            {data?.content?.description}
+                        </p>
+                    )}
+                    {data.content.collapsible?.length && (
+                        <CollapsingBlock
+                            btnProp={{
+                                className: 'home__text-button',
+                                variant: 'text',
+                            }}
+                        >
+                            {data.content.collapsible.map(({ id, text }) => (
+                                <div key={id}>{text}</div>
+                            ))}
+                        </CollapsingBlock>
+                    )}
+                </section>
+            )}
+        </>
+    );
+});
+PageContent.displayName = 'PageContent';
 
 const LeadContent = () => (
     <>
