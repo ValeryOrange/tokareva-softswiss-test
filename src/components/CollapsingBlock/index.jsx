@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useId } from 'react';
 import Button from '@components/Button';
 import clsx from 'clsx';
 import './collapsing-block.scss';
@@ -14,7 +14,7 @@ import './collapsing-block.scss';
  * @returns {JSX.Element} The rendered CollapsingBlock component.
  */
 const CollapsingBlock = ({ children, btnProp }) => {
-    const id = useRef(Math.random().toString(36)).current;
+    const id = useId();
     const className = clsx('collapsing-block__btn', btnProp.className);
     const computedProps = {
         ...btnProp,
