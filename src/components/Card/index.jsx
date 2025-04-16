@@ -1,5 +1,7 @@
 import React from 'react';
+import Button from '@components/Button';
 import CollapsingBlock from '@components/CollapsingBlock';
+import withRenderToggle from '@components/CollapsingBlock/renderToggle';
 import './card.scss';
 
 /**
@@ -25,17 +27,15 @@ const Card = ({ title, caption, images, text }) => {
             <div className="card__title">{title}</div>
             <div className="card__caption">{caption}</div>
             {text && (
-                <CollapsingBlock
-                    btnProp={{
-                        className: 'card__btn',
-                    }}
-                >
+                <CollapsingBlock ToggleButton={CardToggleButton}>
                     {text}
                 </CollapsingBlock>
             )}
         </div>
     );
 };
+
+const CardToggleButton = React.memo(withRenderToggle(Button, 'card__btn'));
 
 /**
  * Memoize the component to make it universal even though it is not

@@ -2,7 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import Lead from '@components/Lead';
 import Title from '@components/Title';
 import Cards from '@components/Cards';
+import Button from '@components/Button';
 import CollapsingBlock from '@components/CollapsingBlock';
+import withRenderToggle from '@components/CollapsingBlock/renderToggle';
 import Loader from '@components/Loader';
 import fakeRequestHomePageData from '@/api/home';
 import './home.scss';
@@ -74,12 +76,7 @@ const PageContent = React.memo(({ isLoading, data }) => {
                         </p>
                     )}
                     {data.content.collapsible?.length && (
-                        <CollapsingBlock
-                            btnProp={{
-                                className: 'home__text-button',
-                                variant: 'text',
-                            }}
-                        >
+                        <CollapsingBlock ToggleButton={PageContentToggleButton}>
                             {data.content.collapsible.map(({ id, text }) => (
                                 <div key={id}>{text}</div>
                             ))}
@@ -102,12 +99,7 @@ const LeadContent = () => (
             Where the possibilities are{' '}
             <em className="highlight highlight_yellow">endless!</em>
         </Title>
-        <CollapsingBlock
-            btnProp={{
-                className: 'lead__button',
-                variant: 'contained',
-            }}
-        >
+        <CollapsingBlock ToggleButton={LeadToggleButton}>
             <div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget
                 ullamcorper mi. Nam enim odio, laoreet in porta vitae, porttitor
@@ -132,6 +124,14 @@ const LeadContent = () => (
             </div>
         </CollapsingBlock>
     </>
+);
+
+const LeadToggleButton = React.memo(
+    withRenderToggle(Button, 'lead__button', 'contained')
+);
+
+const PageContentToggleButton = React.memo(
+    withRenderToggle(Button, 'home__text-button', 'text')
 );
 
 export default Home;

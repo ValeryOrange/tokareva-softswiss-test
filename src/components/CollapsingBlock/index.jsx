@@ -1,6 +1,4 @@
 import React, { useId } from 'react';
-import Button from '@components/Button';
-import clsx from 'clsx';
 import './collapsing-block.scss';
 
 /**
@@ -8,19 +6,12 @@ import './collapsing-block.scss';
  *
  * @param {Object} props - The component props.
  * @param {React.ReactNode} props.children - The content to be displayed inside the collapsible block.
- * @param {Object} props.btnProp - The properties to be passed to the Button component.
- * @param {string} props.btnProp.className - Additional class names for the button.
+ * @param {JSX.Element} props.ToggleButton - Toggle Button with an appearance that is specific for the current usage
  *
  * @returns {JSX.Element} The rendered CollapsingBlock component.
  */
-const CollapsingBlock = ({ children, btnProp }) => {
+const CollapsingBlock = ({ children, ToggleButton }) => {
     const id = useId();
-    const className = clsx('collapsing-block__btn', btnProp.className);
-    const computedProps = {
-        ...btnProp,
-        htmlFor: id,
-        className,
-    };
     return (
         <div className="collapsing-block">
             <input
@@ -28,7 +19,7 @@ const CollapsingBlock = ({ children, btnProp }) => {
                 type="checkbox"
                 className="collapsing-block__hidden-checkbox"
             />
-            <Button {...computedProps} />
+            <ToggleButton className="collapsing-block__btn" htmlFor={id} />
             <div className="collapsing-block__content">{children}</div>
         </div>
     );
