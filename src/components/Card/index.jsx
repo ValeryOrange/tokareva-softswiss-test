@@ -1,7 +1,6 @@
 import React from 'react';
-import Button from '@components/Button';
 import CollapsingBlock from '@components/CollapsingBlock';
-import withRenderToggle from '@components/CollapsingBlock/renderToggle';
+import renderToggle from '@components/CollapsingBlock/renderToggle';
 import './card.scss';
 
 /**
@@ -35,7 +34,7 @@ const Card = ({ title, caption, images, text }) => {
     );
 };
 
-const CardToggleButton = React.memo(withRenderToggle(Button, 'card__btn'));
+const CardToggleButton = React.memo(renderToggle('card__btn'));
 
 /**
  * Memoize the component to make it universal even though it is not

@@ -2,9 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import Lead from '@components/Lead';
 import Title from '@components/Title';
 import Cards from '@components/Cards';
-import Button from '@components/Button';
 import CollapsingBlock from '@components/CollapsingBlock';
-import withRenderToggle from '@components/CollapsingBlock/renderToggle';
+import renderToggle from '@components/CollapsingBlock/renderToggle';
 import Loader from '@components/Loader';
 import fakeRequestHomePageData from '@/api/home';
 import './home.scss';
@@ -126,12 +125,10 @@ const LeadContent = () => (
     </>
 );
 
-const LeadToggleButton = React.memo(
-    withRenderToggle(Button, 'lead__button', 'contained')
-);
+const LeadToggleButton = React.memo(renderToggle('lead__button', 'contained'));
 
 const PageContentToggleButton = React.memo(
-    withRenderToggle(Button, 'home__text-button', 'text')
+    renderToggle('home__text-button', 'text')
 );
 
 export default Home;
