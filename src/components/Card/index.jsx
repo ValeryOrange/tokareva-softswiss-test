@@ -1,6 +1,6 @@
 import React from 'react';
 import CollapsingBlock from '@components/CollapsingBlock';
-import renderToggle from '@components/CollapsingBlock/renderToggle';
+import createToggleButton from '@components/CollapsingBlock/createToggleButton';
 import './card.scss';
 
 /**
@@ -34,7 +34,9 @@ const Card = ({ title, caption, images, text }) => {
     );
 };
 
-const CardToggleButton = React.memo(renderToggle('card__btn'));
+const CardToggleButton = React.memo(
+    createToggleButton({ className: 'card__btn' })
+);
 
 /**
  * Memoize the component to make it universal even though it is not
