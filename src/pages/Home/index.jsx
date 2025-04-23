@@ -2,8 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import Lead from '@components/Lead';
 import Title from '@components/Title';
 import Cards from '@components/Cards';
+import Button from '@components/Button';
 import CollapsingBlock from '@components/CollapsingBlock';
-import createToggleButton from '@components/CollapsingBlock/createToggleButton';
+import withOverridingProps from '@/hoc/withOverridingProperties';
 import Loader from '@components/Loader';
 import fakeRequestHomePageData from '@/api/home';
 import './home.scss';
@@ -126,11 +127,17 @@ const LeadContent = () => (
 );
 
 const LeadToggleButton = React.memo(
-    createToggleButton({ className: 'lead__button', variant: 'contained' })
+    withOverridingProps(Button, {
+        className: 'lead__button',
+        variant: 'contained',
+    })
 );
 
 const PageContentToggleButton = React.memo(
-    createToggleButton({ className: 'home__text-button', variant: 'text' })
+    withOverridingProps(Button, {
+        className: 'home__text-button',
+        variant: 'text',
+    })
 );
 
 export default Home;

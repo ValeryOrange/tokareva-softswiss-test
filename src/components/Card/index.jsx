@@ -1,6 +1,7 @@
 import React from 'react';
 import CollapsingBlock from '@components/CollapsingBlock';
-import createToggleButton from '@components/CollapsingBlock/createToggleButton';
+import Button from '@components/Button';
+import withOverridingProps from '@/hoc/withOverridingProperties';
 import './card.scss';
 
 /**
@@ -35,7 +36,7 @@ const Card = ({ title, caption, images, text }) => {
 };
 
 const CardToggleButton = React.memo(
-    createToggleButton({ className: 'card__btn' })
+    withOverridingProps(Button, { className: 'card__btn' })
 );
 
 /**
